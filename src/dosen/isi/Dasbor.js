@@ -11,12 +11,12 @@ export default class Dasbor extends Component {
       <div className="container-fluid">
         <div className="row mb-2">
           <div className="col-sm-6">
-            <h1>Dasbor</h1>
+            <h1>Dashboard</h1>
           </div>
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
               {/* <li className="breadcrumb-item"><a href="#">Home</a></li> */}
-              <li className="breadcrumb-item active">Dasbor</li>
+              <li className="breadcrumb-item active">Dashboard</li>
             </ol>
           </div>
         </div>
@@ -27,34 +27,40 @@ export default class Dasbor extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="#" style={{color: 'black'}}>
-              <div className="card">
-                <div className="card-body text-center">
-                  <i className="fas fa-4x fa-book" />
-                  <br /><small>Kelas</small>
+              <div className="info-box">
+                <span className="info-box-icon bg-info elevation-1"><i className="fas fa-book" /></span>
+                <div className="info-box-content">
+                  <span className="info-box-text">Jumlah Kelas</span>
+                  <span className="info-box-number">
+                    10
+                  </span>
                 </div>
+                {/* /.info-box-content */}
               </div>
-            </a>
           </div>
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="#" style={{color: 'black'}}>
-              <div className="card">
-                <div className="card-body text-center">
-                  <i className="fas fa-4x fa-edit" />
-                  <br /><small>Ujian</small>
+          <div className="info-box">
+                <span className="info-box-icon bg-warning elevation-1"><i className="fas fa-edit" /></span>
+                <div className="info-box-content">
+                  <span className="info-box-text">Jumlah Ujian</span>
+                  <span className="info-box-number">
+                    10
+                  </span>
                 </div>
+                {/* /.info-box-content */}
               </div>
-            </a>
           </div>
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="#" style={{color: 'black'}}>
-              <div className="card">
-                <div className="card-body text-center">
-                  <i className="fas fa-4x fa-bullhorn" />
-                  <br /><small>Pengumuman</small>
+          <div className="info-box">
+                <span className="info-box-icon bg-success elevation-1"><i className="fas fa-book" /></span>
+                <div className="info-box-content">
+                  <span className="info-box-text">Jumlah Matakuliah</span>
+                  <span className="info-box-number">
+                    10
+                  </span>
                 </div>
+                {/* /.info-box-content */}
               </div>
-            </a>
           </div> 
           {/* <div className="col-md-12 col-sm-12 col-12">
             <div className="card">

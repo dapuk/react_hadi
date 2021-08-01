@@ -11,12 +11,12 @@ export default class Dasbor extends Component {
       <div className="container-fluid">
         <div className="row mb-2">
           <div className="col-sm-6">
-            <h1>Dasbor</h1>
+            <h1>Dashboard</h1>
           </div>
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
               {/* <li className="breadcrumb-item"><a href="#">Home</a></li> */}
-              <li className="breadcrumb-item active">Dasbor</li>
+              <li className="breadcrumb-item active">Dashboard</li>
             </ol>
           </div>
         </div>
@@ -26,30 +26,31 @@ export default class Dasbor extends Component {
     <section className="content">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-sm-3">
-            <div className="alert bg-green">
-              <h4>Kelas</h4>
-              <span className="d-block"> 12.1A.10</span>                
+          <div className="col-md-6 col-sm-6 col-6">
+            <div className="info-box">
+                <span className="info-box-icon bg-primary elevation-1"><i className="fas fa-book" /></span>
+                <div className="info-box-content">
+                  <span className="info-box-text">Jurusan</span>
+                  <span className="info-box-number">
+                    Teknik Informatika
+                  </span>
+                </div>
+                {/* /.info-box-content */}
+              </div>
             </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="alert bg-blue">
-              <h4>Jurusan</h4>
-              <span className="d-block"> Teknik Informatika</span>                
+
+            <div className="col-md-6 col-sm-6 col-6">
+            <div className="info-box">
+                <span className="info-box-icon bg-primary elevation-1"><i className="fas fa-book" /></span>
+                <div className="info-box-content">
+                  <span className="info-box-text">Jumlah Ujian</span>
+                  <span className="info-box-number">
+                    10
+                  </span>
+                </div>
+                {/* /.info-box-content */}
+              </div>
             </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="alert bg-yellow">
-              <h4>Tanggal</h4>
-              <span className="d-block"> 2021-07-31</span>                
-            </div>
-          </div>
-          <div className="col-sm-3">
-            <div className="alert bg-red">
-              <h4>Jam</h4>
-              <span className="d-block"> <span className="live-clock">14:53:23</span></span>                
-            </div>
-          </div>
         </div>
         {/* <div className="row">
           <div className="col-md-12 col-sm-12 col-12">

@@ -28,7 +28,7 @@ export default class Profil extends Component {
                                 <div className="card card-primary card-outline">
                                     <div className="card-body box-profile">
                                     <div className="text-center">
-                                        <img className="profile-user-img" src="http://localhost/e_test/AdminLTE/user.png" style={{width: '100%'}} />
+                                        <img className="profile-user-img" src="/dist/img/user.png"  style={{width: '100%'}} />
                                     </div>
                                     </div>
                                     {/* /.card-body */}

@@ -15,7 +15,7 @@ export default class Profil extends Component {
           </div>
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
-              <li className="breadcrumb-item"><a href="#">Dasbor</a></li>
+              <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
               <li className="breadcrumb-item active">Profil Dosen</li>
             </ol>
           </div>
