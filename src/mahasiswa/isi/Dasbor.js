@@ -51,7 +51,7 @@ export default class Dasbor extends Component {
             </div>
           </div>
         </div>
-        <div className="row">
+        {/* <div className="row">
           <div className="col-md-12 col-sm-12 col-12">
             <div className="card">
               <div className="card-header">
@@ -85,7 +85,7 @@ export default class Dasbor extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
 
