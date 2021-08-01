@@ -43,24 +43,24 @@ export default class Tabel extends Component {
                     <thead>
                         <tr>
                         <th>#</th>
-                        <th>Mata Kuliah</th>
+                        <th>Paket Soal</th>
+                        <th>Kode Seksi</th>
+                        <th>Matakuliah</th>
                         <th>Jenis Ujian</th>
-                        <th>Jumlah Soal</th>
-                        <th>Waktu Mulai</th>
-                        <th>Waktu Berakhir</th>
+                        <th>Waktu</th>
                         <th>Status</th>
-                        <th>Hasil</th>
                         <th>Opsi</th>
+                        <th>Hasil</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
+                        <td>11111</td>
+                        <td>001</td>
                         <td>Dasar Pemrograman</td>
-                        <td>UTS</td>
-                        <td>10</td>
                         <td>
-                            31, July 2021 - 17:26:52                    </td>
+                            UTS </td>
                         <td>
                             31, July 2021 - 17:26:52                    </td>
                         <td>
@@ -68,14 +68,14 @@ export default class Tabel extends Component {
                             <button>Terbit</button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
-                        </td>
-                        <td>
                             <Link to="/dosen/ubahujian/" className="fa fa-edit text-info" >
                             </Link>    
                             <a href>
                             <i className="fa fa-trash text-danger" title="Hapus" />
                             </a>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
                         </td>
                         </tr>
                     </tbody>
