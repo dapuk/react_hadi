@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
+import user from '../user.png'
 
 export default class Menu extends Component {
     render() {
@@ -23,7 +24,7 @@ export default class Menu extends Component {
       {/* Sidebar user panel (optional) */}
       <div className="user-panel mt-3 pb-3 mb-3 d-flex">
         <div className="image">
-          <img src="/dist/img/user.png" className="img-circle elevation-2" alt="User Image" />
+          <img src={user} className="img-circle elevation-2" alt="User Image" />
         </div>
         <div className="info">
           <a href="#" className="d-block">Dosen</a>

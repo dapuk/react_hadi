@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom'
+import logo from '../Logo-unj.png'
   
 function Login() {
     const[username, setUsername] = useState('');
@@ -25,7 +26,7 @@ function Login() {
             <body className="hold-transition login-page">
             <div className="login-box">
         <div className="login-logo">
-        <img src="/dist/img/Logo-unj.png" className="img-circle" style={{height: 100, width: 100}} /><br />
+        <img src={logo} className="img-circle" style={{height: 100, width: 100}} /><br />
         <a href="#">Login<br /><b>E-TEST</b></a>
         </div>
         <div className="card">
