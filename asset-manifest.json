@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.js": "/react_hadi/static/js/main.c0ef98a4.chunk.js",
-    "main.js.map": "/react_hadi/static/js/main.c0ef98a4.chunk.js.map",
+    "main.js": "/react_hadi/static/js/main.332ebccd.chunk.js",
+    "main.js.map": "/react_hadi/static/js/main.332ebccd.chunk.js.map",
     "runtime-main.js": "/react_hadi/static/js/runtime-main.9abcc9f9.js",
     "runtime-main.js.map": "/react_hadi/static/js/runtime-main.9abcc9f9.js.map",
     "static/js/2.c1b43c01.chunk.js": "/react_hadi/static/js/2.c1b43c01.chunk.js",
     "static/js/2.c1b43c01.chunk.js.map": "/react_hadi/static/js/2.c1b43c01.chunk.js.map",
     "index.html": "/react_hadi/index.html",
-    "static/js/2.c1b43c01.chunk.js.LICENSE.txt": "/react_hadi/static/js/2.c1b43c01.chunk.js.LICENSE.txt"
+    "static/js/2.c1b43c01.chunk.js.LICENSE.txt": "/react_hadi/static/js/2.c1b43c01.chunk.js.LICENSE.txt",
+    "static/media/Logo-unj.63b6c602.png": "/react_hadi/static/media/Logo-unj.63b6c602.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9abcc9f9.js",
     "static/js/2.c1b43c01.chunk.js",
-    "static/js/main.c0ef98a4.chunk.js"
+    "static/js/main.332ebccd.chunk.js"
   ]
 }
