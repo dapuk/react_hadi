@@ -9,15 +9,30 @@ export default class Dasbor extends Component {
     {/* Content Header (Page header) */}
     <section className="content-header">
       <div className="container-fluid">
-        <div className="row mb-2">
-          <div className="col-sm-6">
-            <h1>Dashboard</h1>
+      <div class="row">
+          <div class="col-sm-3">
+            <div class="alert bg-green">
+              <h4>Kelas</h4>
+              <span class="d-block"> 12.1A.10</span>                
+            </div>
           </div>
-          <div className="col-sm-6">
-            <ol className="breadcrumb float-sm-right">
-              {/* <li className="breadcrumb-item"><a href="#">Home</a></li> */}
-              <li className="breadcrumb-item active">Dashboard</li>
-            </ol>
+          <div class="col-sm-3">
+            <div class="alert bg-blue">
+                <h4>Jurusan</h4>
+                <span class="d-block"> Teknik Informatika</span>                
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="alert bg-yellow">
+              <h4>Tanggal</h4>
+              <span class="d-block"> 2021-08-02</span>                
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div class="alert bg-red">
+              <h4>Jam</h4>
+              <span class="d-block"> <span class="live-clock">12:40:35</span></span>                
+            </div>
           </div>
         </div>
       </div>{/* /.container-fluid */}
@@ -26,7 +41,16 @@ export default class Dasbor extends Component {
     <section className="content">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-6 col-sm-6 col-6">
+          <div className="col-md-12 col-sm-12 col-12">
+            <div className="card">
+              <div className="card-header">
+                <h3 className="card-title">
+                  <i className="fa fa-2x fa-chart-line" /> Status Aplikasi
+                </h3>
+              </div>
+              <div className="card-body">
+              <div className="row">
+              <div className="col-md-6 col-sm-6 col-6">
             <div className="info-box">
                 <span className="info-box-icon bg-primary elevation-1"><i className="fas fa-book" /></span>
                 <div className="info-box-content">
@@ -51,32 +75,7 @@ export default class Dasbor extends Component {
                 {/* /.info-box-content */}
               </div>
             </div>
-        </div>
-        {/* <div className="row">
-          <div className="col-md-12 col-sm-12 col-12">
-            <div className="card">
-              <div className="card-header">
-                <h3 className="card-title">
-                  <i className="fa fa-2x fa-chart-line" /> Status Aplikasi
-                </h3>
-              </div>
-              <div className="card-body">
-                <small>
-                  <table className="table table-bordered">
-                    <thead>                  
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Nama Dosen : Yuni</td>
-                        <td>Jumlah Ujian : 12</td>
-                      </tr>
-                      <tr>
-                        <td>Jumlah Pengguna Aktif : 0</td>
-                        <td />
-                      </tr>
-                    </tbody>
-                  </table>
-                </small>
+            </div>
               </div>
               <div className="card-footer">
                 <div className="float-right">                
@@ -86,7 +85,7 @@ export default class Dasbor extends Component {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
 

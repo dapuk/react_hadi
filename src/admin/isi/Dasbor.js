@@ -26,64 +26,74 @@ export default class Dasbor extends Component {
     <div>
       <section className="content">
         <div className="container-fluid">
+          <div className="row">
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/mahasiswa/tambah" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-plus-square" />
+                    <br /><small>Pengguna</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/dosen/" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-users" />
+                    <br /><small>Dosen</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/mahasiswa/" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-users" />
+                    <br /><small>Mahasiswa</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/matakuliah/" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-book" />
+                    <br /><small>Mata Kuliah</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/pengumuman/" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-bullhorn" />
+                    <br /><small>Pengumuman</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div className="col-md-4 col-sm-4 col-4">
+              <a href="admin/ujian/" style={{color: 'black'}}>
+                <div className="card">
+                  <div className="card-body text-center">
+                    <i className="fas fa-4x fa-edit" />
+                    <br /><small>Ujian</small>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>{/* /.container-fluid */}
       </section>
       <section className="content">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-3 col-sm-3 col-3">
-            <div className="info-box">
-                <span className="info-box-icon bg-info elevation-1"><i className="fas fa-book" /></span>
-                <div className="info-box-content">
-                  <span className="info-box-text">Jumlah Kelas</span>
-                  <span className="info-box-number">
-                    10
-                  </span>
-                </div>
-                {/* /.info-box-content */}
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-3 col-3">
-            <div className="info-box">
-                <span className="info-box-icon bg-success elevation-1"><i className="fas fa-users" /></span>
-                <div className="info-box-content">
-                  <span className="info-box-text">Jumlah Dosen</span>
-                  <span className="info-box-number">
-                    10
-                  </span>
-                </div>
-                {/* /.info-box-content */}
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-3 col-3">
-            <div className="info-box">
-                <span className="info-box-icon bg-primary elevation-1"><i className="fas fa-users" /></span>
-                <div className="info-box-content">
-                  <span className="info-box-text">Jumlah Mahasiswa</span>
-                  <span className="info-box-number">
-                    10
-                  </span>
-                </div>
-                {/* /.info-box-content */}
-              </div>
-            </div>
-
-            <div className="col-md-3 col-sm-3 col-3">
-            <div className="info-box">
-                <span className="info-box-icon bg-warning elevation-1"><i className="fas fa-book" /></span>
-                <div className="info-box-content">
-                  <span className="info-box-text">Jumlah Matakuliah</span>
-                  <span className="info-box-number">
-                    10
-                  </span>
-                </div>
-                {/* /.info-box-content */}
-              </div>
-            </div>
-            
-            {/* <div className="col-md-12 col-sm-12 col-12">
+            <div className="col-md-12 col-sm-12 col-12">
               <div className="card">
                 <div className="card-header">
                   <h3 className="card-title">
@@ -91,34 +101,66 @@ export default class Dasbor extends Component {
                   </h3>
                 </div>
                 <div className="card-body">
-                  <small>
-                    <table className="table table-bordered">
-                      <thead>                  
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>Jumlah Pengguna Total : 0</td>
-                          <td>Jumlah Maha Siswa : 0</td>
-                        </tr>
-                        <tr>
-                          <td>Jumlah Dosen : 0</td>
-                          <td>Jumlah Mata Kuliah : 0</td>
-                        </tr>
-                        <tr>
-                          <td>Jumlah Pengguna Aktif : 0</td>
-                          <td />
-                        </tr>
-                      </tbody>
-                    </table>
-                  </small>
+                  <div className="row">
+                  <div className="col-md-3 col-sm-3 col-3">
+                    <div className="info-box">
+                        <span className="info-box-icon bg-info elevation-1"><i className="fas fa-book" /></span>
+                        <div className="info-box-content">
+                          <span className="info-box-text">Jumlah Kelas</span>
+                          <span className="info-box-number">
+                            10
+                          </span>
+                        </div>
+                        {/* /.info-box-content */}
+                      </div>
+                      </div>
+
+                      <div className="col-md-3 col-sm-3 col-3">
+                        <div className="info-box">
+                            <span className="info-box-icon bg-success elevation-1"><i className="fas fa-users" /></span>
+                            <div className="info-box-content">
+                              <span className="info-box-text">Jumlah Dosen</span>
+                              <span className="info-box-number">
+                                10
+                              </span>
+                            </div>
+                            {/* /.info-box-content */}
+                          </div>
+                      </div>
+
+                      <div className="col-md-3 col-sm-3 col-3">
+                        <div className="info-box">
+                            <span className="info-box-icon bg-primary elevation-1"><i className="fas fa-users" /></span>
+                            <div className="info-box-content">
+                              <span className="info-box-text">Jumlah Mahasiswa</span>
+                              <span className="info-box-number">
+                                10
+                              </span>
+                            </div>
+                            {/* /.info-box-content */}
+                          </div>
+                      </div>
+
+                      <div className="col-md-3 col-sm-3 col-3">
+                        <div className="info-box">
+                            <span className="info-box-icon bg-warning elevation-1"><i className="fas fa-users" /></span>
+                            <div className="info-box-content">
+                              <span className="info-box-text">Jumlah Matakuliah</span>
+                              <span className="info-box-number">
+                                10
+                              </span>
+                            </div>
+                            {/* /.info-box-content */}
+                          </div>
+                      </div>
+                    </div>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
       </section>
     </div>
-
   </div>
   {/* /.content-wrapper */}</div>
 
