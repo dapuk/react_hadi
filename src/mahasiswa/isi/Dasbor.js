@@ -88,8 +88,6 @@ export default class Dasbor extends Component {
         </div>
       </div>
     </section>
-
-
   </div>
   {/* /.content-wrapper */}</div>
 
