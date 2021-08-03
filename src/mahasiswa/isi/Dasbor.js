@@ -77,12 +77,12 @@ export default class Dasbor extends Component {
             </div>
             </div>
               </div>
-              <div className="card-footer">
+              {/* <div className="card-footer">
                 <div className="float-right">                
                   <button className="btn btn-default"> Export status ke PDF </button>
                   <button className="btn btn-default"> Export status ke EXCEL </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import user from '../../user.png'
 
 export default class Profil extends Component {
     render() {
@@ -28,7 +29,7 @@ export default class Profil extends Component {
                                 <div className="card card-primary card-outline">
                                     <div className="card-body box-profile">
                                     <div className="text-center">
-                                        <img className="profile-user-img" src="/dist/img/user.png"  style={{width: '100%'}} />
+                                        <img className="profile-user-img" src={user}  style={{width: '100%'}} />
                                     </div>
                                     </div>
                                     {/* /.card-body */}

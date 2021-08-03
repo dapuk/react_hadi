@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import user from '../../user.png'
 
 
 export default class Profil extends Component {
@@ -29,7 +30,7 @@ export default class Profil extends Component {
                   <div className="card card-primary card-outline">
                     <div className="card-body box-profile">
                       <div className="text-center">
-                        <img className="profile-user-img img-fluid img-circle" src="/dist/img/user.png" alt="User profile picture" />
+                        <img className="profile-user-img img-fluid img-circle" src={user} alt="User profile picture" />
                       </div>
                       <h3 className="profile-username text-center">Admin E-TEST</h3>
                       <p className="text-muted text-center">Software Engineer</p>
