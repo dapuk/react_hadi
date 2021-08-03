@@ -1,7 +1,12 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom';
 
 export default class Ujian extends Component {
     render() {
+        let MarginFontAwe = {
+            marginRight:'5px'
+          };
+
         return (
             <div className="content-wrapper">
                 <section className="content-header">
@@ -40,9 +45,9 @@ export default class Ujian extends Component {
                                     <td>
                                     01, August 2021 - 01:46:46                    </td>
                                     <td>
-                                    <a href="#" className="btn btn-xs btn-primary">
-                                        <i className="fa fa-play" /> Mulai                     
-                                    </a>
+                                    <NavLink exact to="/mahasiswa/prosesujian" className="btn btn-xs btn-primary">
+                                        <i className="nav-icon fas fa-play" style={MarginFontAwe} /> Mulai
+                                    </NavLink>
                                     </td>
                                     <td>
                                     Skor nilai
