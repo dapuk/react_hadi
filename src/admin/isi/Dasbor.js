@@ -28,7 +28,7 @@ export default class Dasbor extends Component {
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/mahasiswa/tambah" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-plus-square" />
@@ -38,7 +38,7 @@ export default class Dasbor extends Component {
               </a>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/dosen/" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-users" />
@@ -48,7 +48,7 @@ export default class Dasbor extends Component {
               </a>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/mahasiswa/" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-users" />
@@ -58,7 +58,7 @@ export default class Dasbor extends Component {
               </a>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/matakuliah/" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-book" />
@@ -68,7 +68,7 @@ export default class Dasbor extends Component {
               </a>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/pengumuman/" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-bullhorn" />
@@ -78,7 +78,7 @@ export default class Dasbor extends Component {
               </a>
             </div>
             <div className="col-md-4 col-sm-4 col-4">
-              <a href="admin/ujian/" style={{color: 'black'}}>
+              <a href="#" style={{color: 'black'}}>
                 <div className="card">
                   <div className="card-body text-center">
                     <i className="fas fa-4x fa-edit" />

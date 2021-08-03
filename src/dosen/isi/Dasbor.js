@@ -11,7 +11,7 @@ export default class Dasbor extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="dosen/mahasiswa/" style={{color: 'black'}}>
+            <a href="#" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
                   <i className="fas fa-4x fa-users" />
@@ -21,7 +21,7 @@ export default class Dasbor extends Component {
             </a>
           </div>
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="dosen/pengumuman/" style={{color: 'black'}}>
+            <a href="#" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
                   <i className="fas fa-4x fa-bullhorn" />
@@ -31,7 +31,7 @@ export default class Dasbor extends Component {
             </a>
           </div>
           <div className="col-md-4 col-sm-4 col-4">
-            <a href="dosen/ujian/" style={{color: 'black'}}>
+            <a href="#" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
                   <i className="fas fa-4x fa-edit" />
