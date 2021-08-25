@@ -112,7 +112,7 @@ export default class Tambah extends Component {
                                     <button className="btn btn-success btn-sm" onClick={this.addClick.bind(this)}>
                                         <i className="fa fa-plus"></i>
                                     </button>
-                                    <input type="text" value=""/>
+                                    <input type="text" />
                                     <input type="file"></input>
                                 </div>
                                 

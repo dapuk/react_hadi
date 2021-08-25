@@ -48,7 +48,7 @@ export default class ProsesUjian extends Component {
                                 <div className="row">
                                     <div className="col-12">
                                         <a href="#" className="btn btn-success btn-sm" style={MarginR}>1</a>
-                                        <a href="#" className="btn btn-warning btn-sm" style={MarginR}>2</a>
+                                        <a href="#" className="btn btn-danger btn-sm" style={MarginR}>2</a>
                                         <a href="#" className="btn btn-success btn-sm" style={MarginR}>3</a>
                                         <a href="#" className="btn btn-default btn-sm" style={MarginR}>4</a>
                                         <a href="#" className="btn btn-default btn-sm" style={MarginR}>5</a>
@@ -126,7 +126,7 @@ export default class ProsesUjian extends Component {
 
                         <div className="card-footer">
                             <button type="submit" className="btn btn-danger btn-sm" style={MarginR}>Sebelumnya</button>
-                            <button type="submit" className="btn btn-warning btn-sm" style={MarginR}>Ragu-Ragu</button>
+                            {/* <button type="submit" className="btn btn-warning btn-sm" style={MarginR}>Ragu-Ragu</button> */}
                             <button type="submit" className="btn btn-success btn-sm" style={MarginR}>Selanjutnya</button>
                             
                         </div>
