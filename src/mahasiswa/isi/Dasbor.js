@@ -40,6 +40,49 @@ export default class Dasbor extends Component {
     {/* Main content */}
     <section className="content">
       <div className="container-fluid">
+      <div className="row">
+        <div className="col-12">
+          <div className="card">
+            <div className="card-body">
+              <div className="form-group"><label>Pilih Tanggal</label>
+                <input type="text" name="periodik" className="form-control float-right" id="range-date-full" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div className="row">
+          <div className="col-sm-6">
+            <div className="card">
+              <div className="card-body text-center">
+                <div className="description-block border-right">
+                  <span class="description-percentage text-green"><i className="fa fa-check" /> 
+ 2</span>
+                  <h5 class="description-header"></h5>
+                  <span class="description-text">JUMLAH PAKET SOAL SUDAH DIKERJAKAN</span>
+                </div>
+                {/* /.description-block */}
+              </div>
+            </div>
+          </div>
+          {/* /.col */}
+
+          <div className="col-sm-6">
+            <div className="card">
+              <div className="card-body text-center">
+                <div className="description-block border-right">
+                  <span class="description-percentage text-danger"><i className="fa fa-times" /> 1</span>
+                  <h5 class="description-header"></h5>
+                  <span class="description-text">JUMLAH PAKET SOAL BELUM DIKERJAKAN</span>
+                </div>
+                {/* /.description-block */}
+              </div>
+            </div>
+          </div>
+          {/* /.col */}
+        </div>
+
         <div className="row">
           <div className="col-md-12 col-sm-12 col-12">
             <div className="card">

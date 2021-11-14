@@ -11,7 +11,7 @@ export default class Menu extends Component {
         return (
             <div>
   {/* Main Sidebar Container */}
-  <aside className="main-sidebar sidebar-dark-primary elevation-4">
+  <aside className="main-sidebar sidebar-light-primary elevation-4">
     {/* Brand Logo */}
     <a href="index3.html" className="brand-link">
       {/* <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} /> */}
@@ -48,6 +48,14 @@ export default class Menu extends Component {
                     <p> Profile</p>
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+              <NavLink to="/dosen/hasilujian/" activeClassName="nav-link active" className="nav-link">
+                    <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
+                    <p> Hasil Ujian</p>
+                </NavLink>
+              </li>
+
               <li className="nav-item">
               <NavLink to="/dosen/ujian/" activeClassName="nav-link active" className="nav-link">
                     <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
@@ -61,6 +69,14 @@ export default class Menu extends Component {
                     <p>Paket Soal</p>
                 </NavLink>
               </li>
+
+              <li className="nav-item">
+              <NavLink to="/dosen/bank/" activeClassName="nav-link active" className="nav-link">
+                    <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
+                    <p>Bank Soal</p>
+                </NavLink>
+              </li>
+
               <li className="nav-item">
                 <NavLink to="/" exact className="nav-link">
                 <i className="nav-icon fa fa-power-off text-danger" style={MarginFontAwe} /> 

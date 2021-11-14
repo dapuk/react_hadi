@@ -12,12 +12,12 @@ export default class Tabel extends Component {
       <div className="container-fluid">
         <div className="row mb-2">
           <div className="col-sm-6">
-            <h1>Data Ujian</h1>
+            <h1>Data Bank Soal</h1>
           </div>
           <div className="col-sm-6">
             <ol className="breadcrumb float-sm-right">
               <li className="breadcrumb-item"><a href="#">Dashboard</a></li>
-              <li className="breadcrumb-item active">Data Ujian</li>
+              <li className="breadcrumb-item active">Data Bank Soal</li>
             </ol>
           </div>
         </div>
@@ -30,10 +30,10 @@ export default class Tabel extends Component {
             <div className="col-12">
                 <div className="card">
                 <div className="card-header">
-                    <h3 className="card-title">Data Soal Ujian</h3>
+                    <h3 className="card-title">Data Bank Soal</h3>
                     <div className="card-tools">
-                        <Link to="/dosen/tambahujian/" className="btn btn-sm btn-primary">
-                            <i className="fas fa-plus" /> Tambah Ujian
+                        <Link to="/dosen/tambahbank/" className="btn btn-sm btn-primary">
+                            <i className="fas fa-plus" /> Tambah Data Bank Soal
                         </Link>
                     </div>
                 </div>
@@ -43,39 +43,20 @@ export default class Tabel extends Component {
                     <thead>
                         <tr>
                         <th>#</th>
-                        <th>Paket Soal</th>
-                        <th>Kode Seksi</th>
-                        <th>Matakuliah</th>
-                        <th>Jenis Ujian</th>
-                        <th>Waktu</th>
-                        <th>Status</th>
+                        <th>Nama Bank Soal</th>
                         <th>Opsi</th>
-                        <th>Hasil</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>11111</td>
-                        <td>001</td>
-                        <td>Dasar Pemrograman</td>
+                        <td>UTS FAKULTAS INFORMATIKA TAHUN 2021</td>
                         <td>
-                            UTS </td>
-                        <td>
-                            31, July 2021 - 17:26:52                    </td>
-                        <td>
-                            <button>Draft</button>
-                            <button>Terbit</button>
-                        </td>
-                        <td>
-                            <Link to="/dosen/ubahujian/" className="fa fa-edit text-info" >
+                            <Link to="/dosen/ubahpaket/" className="fa fa-edit text-info" >
                             </Link>    
                             <a href>
                             <i className="fa fa-trash text-danger" title="Hapus" />
                             </a>
-                        </td>
-                        <td>
-                            <button>Export to xls</button>
                         </td>
                         </tr>
                     </tbody>

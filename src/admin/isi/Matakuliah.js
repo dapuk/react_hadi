@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 
 export default class Matakuliah extends Component {
     render() {
+      let MarginFontAwe = {
+        marginRight:'5px'
+      };
+
         return (
             <div className="content-wrapper">
   <section className="content-header">
@@ -16,7 +20,11 @@ export default class Matakuliah extends Component {
             <div className="card-header">
               <h3 className="card-title">Data Mata Kuliah</h3>
               <div className="card-tools">
-                <a href="http://localhost/e_test/admin/matakuliah/tambah" className="btn btn-sm btn-primary">
+                <a href="#" className="btn btn-sm btn-success" style={MarginFontAwe}>
+                  <i className="fas fa-file-csv" /> Export CSV
+                </a> 
+
+                <a href="#" className="btn btn-sm btn-primary">
                   <i className="fas fa-plus" /> Tambah Mata Kuliah
                 </a>
               </div>

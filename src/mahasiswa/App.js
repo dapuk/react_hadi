@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 function App() {
   return (
     <Router>
-      <div class ="wrapper">
+      <div className ="wrapper">
         <Nav/>
         <Menu/>
         <Switch>

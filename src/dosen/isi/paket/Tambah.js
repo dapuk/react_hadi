@@ -34,6 +34,14 @@ export default class Tambah extends Component {
                         </div>
                         <div className="card-body">
                             <div className="form-group">
+                                <label>Bank Soal</label>
+                                <select className="form-control" name="dosen" required>
+                                <option selected disabled value> - Pilih Bank Soal - </option>
+                                <option value>UTS FAKULTAS INFORMATIKA TAHUN 2021</option>
+                                </select>
+                            </div> 
+
+                            <div className="form-group">
                                 <label>Matakuliah</label>
                                 <select className="form-control" name="dosen" required>
                                 <option selected disabled value> - Pilih Mata Kuliah - </option>

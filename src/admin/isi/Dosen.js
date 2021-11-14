@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 export default class Dosen extends Component {
     render() {
+      let MarginFontAwe = {
+        marginRight:'5px'
+      };
         return (
             <div className="content-wrapper">
   <section className="content-header">
@@ -16,7 +19,11 @@ export default class Dosen extends Component {
             <div className="card-header">
               <h3 className="card-title">Data Dosen</h3>
               <div className="card-tools">
-                <a href="http://localhost/e_test/admin/dosen/tambah" className="btn btn-sm btn-primary">
+                <a href="#" className="btn btn-sm btn-success" style={MarginFontAwe}>
+                  <i className="fas fa-file-csv" /> Export CSV
+                </a> 
+
+                <a href="#" className="btn btn-sm btn-primary">
                   <i className="fas fa-plus" /> Tambah dosen
                 </a>
               </div>
@@ -40,10 +47,10 @@ export default class Dosen extends Component {
                     <td>Adi</td>
                     <td>adi@dosen.com</td>
                     <td>
-                      <a href="http://localhost/e_test/admin/dosen/edit/">
+                      <a href="#">
                         <i className="fa fa-edit text-info" title="Edit dosen" />                     
                       </a>
-                      <a href>
+                      <a href="#">
                         <i className="fa fa-trash text-danger" title="Hapus dosen" />
                       </a>
                     </td>
