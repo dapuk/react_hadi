@@ -10,7 +10,7 @@ import Login from './login/Login';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router basename="/react_hadi">
+    <Router>
        <Switch>
         <Route path="/admin">
           <Admin />
@@ -24,7 +24,7 @@ ReactDOM.render(
           <Dosen />
          </Route>
 
-         <Route path="/login">
+         <Route path="/">
           <Login />
          </Route>
        </Switch>
