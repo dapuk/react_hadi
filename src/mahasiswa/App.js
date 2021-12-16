@@ -6,7 +6,7 @@ import Ujian from './isi/Ujian';
 import ProsesUjian from './isi/ProsesUjian';
 import Profil from './isi/Profil';
 import Footer from './Footer';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (

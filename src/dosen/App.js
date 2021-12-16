@@ -15,7 +15,7 @@ import TambahPaket from './isi/paket/Tambah';
 import TabelBank from './isi/bank/Tabel';
 import TambahBank from './isi/bank/Tambah';
 import Footer from './Footer';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (

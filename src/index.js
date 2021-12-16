@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 // import './index.css';
 import Admin from './admin/App';
 import Mahasiswa from './mahasiswa/App';
@@ -24,7 +24,7 @@ ReactDOM.render(
           <Dosen />
          </Route>
 
-         <Route path="/">
+         <Route path="/login">
           <Login />
          </Route>
        </Switch>

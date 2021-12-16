@@ -7,7 +7,7 @@ import Mahasiswa from './isi/Mahasiswa';
 import Matakuliah from './isi/Matakuliah';
 import Profil from './isi/Profil';
 import Footer from './Footer';
-import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
