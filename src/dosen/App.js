@@ -1,4 +1,5 @@
 // import logo from './logo.svg';
+import Login from '../login/Login';
 import Nav from './Nav';
 import Menu from './Menu';
 import Dasbor from './isi/Dasbor';
@@ -63,6 +64,8 @@ function App() {
               <Route path="/dosen/tambahbank">
                 <TambahBank/>
               </Route>
+
+              <Route path="/" component={Login} />
             </Switch>
         <Footer />
       </div>

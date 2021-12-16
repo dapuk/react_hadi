@@ -8,7 +8,8 @@ function Menu() {
   let history = useHistory();
 
   function signOutClick() {
-    history.goBack();
+    history.push("/");
+    window.location.reload();
   }
 
   let MarginFontAwe = {
