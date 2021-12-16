@@ -40,24 +40,34 @@ export default class Tabel extends Component {
                     <thead>
                         <tr>
                         <th>#</th>
-                        <th>Nama Mahasiswa</th>
+                        <th>Kode Seksi</th>
                         <th>Bank Soal</th>
-                        <th>Paket Soal - Matakuliah</th>
+                        <th>Paket Soal</th>
+                        <th>Matakuliah</th>
                         <th>Skor Nilai</th>
                         <th>Waktu</th>
+                        <th>Status</th>
+                        <th>Ekspor</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>Mahasiswa</td>
+                        <td>01</td>
                         <td>UTS FAKULTAS INFORMATIKA TAHUN 2021</td>
-                        <td>11111 - Dasar Pemrograman</td>
+                        <td>11111</td>
+                        <td>Dasar Pemrograman</td>
                         <td>
                             75 
                         </td>
                         <td>
-                            90 Menit (Sedang Berlangsung - 70 Menit)                    
+                            90 Menit                    
+                        </td>
+                        <td>
+                          Sedang Berlangsung
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
                         </td>
                         </tr>
                     </tbody>

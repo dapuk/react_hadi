@@ -27,7 +27,7 @@ function Login() {
             <div className="login-box">
         <div className="login-logo">
         <img src={logo} className="img-circle" style={{height: 100, width: 100}} /><br />
-        <a href="#">Login<br /><b>E-TEST</b></a>
+        <a href="#"><b>E-TEST</b></a>
         </div>
         <div className="card">
         <div className="card-body login-card-body">

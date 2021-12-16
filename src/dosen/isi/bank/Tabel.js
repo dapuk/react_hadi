@@ -43,14 +43,14 @@ export default class Tabel extends Component {
                     <thead>
                         <tr>
                         <th>#</th>
-                        <th>Nama Bank Soal</th>
+                        <th>Kode Bank Soal</th>
                         <th>Opsi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>UTS FAKULTAS INFORMATIKA TAHUN 2021</td>
+                        <td>101235</td>
                         <td>
                             <Link to="/dosen/ubahpaket/" className="fa fa-edit text-info" >
                             </Link>    

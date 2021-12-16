@@ -14,7 +14,7 @@ export default class Tambah extends Component {
                     <button className="btn btn-success btn-sm" onClick={this.addClick.bind(this, i)}>
                         <i className="fa fa-plus"></i>
                     </button>
-                    <input type="text" value="" onChange={this.handleChange.bind(this, i)}/>
+                    <input type="text" value={""} onChange={this.handleChange.bind(this, i)}/>
                     <input type="file"></input>
                     <button className="btn btn-danger btn-sm" onClick={this.removeClick.bind(this, i)}>
                         <i className="fa fa-times"></i>
@@ -81,9 +81,9 @@ export default class Tambah extends Component {
                             <div className="form-group">
                                 <label>Paket Soal</label>
                                 <select className="form-control" name="dosen" required>
-                                <option selected disabled value> - Pilih Paket Soal - </option>
-                                <option value>10101</option>
-                                <option value>11111</option>
+                                <option defaultValue={"nol"}> - Pilih Paket Soal - </option>
+                                <option value={"10101"}>10101</option>
+                                <option  value={"11111"}>11111</option>
                                 </select>
                             </div>                       
                         </div>

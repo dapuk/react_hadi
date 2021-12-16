@@ -34,7 +34,7 @@ export default class Tambah extends Component {
                         </div>
                         <div className="card-body">
                             <div className="form-group">
-                                <label>Nama Bank Soal</label>
+                                <label>Kode Bank Soal</label>
                                 <input type="text" className="form-control" />
                             </div>   
                         </div>

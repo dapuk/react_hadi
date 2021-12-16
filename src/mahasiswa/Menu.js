@@ -1,14 +1,25 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import user from '../user.png'
 
-export default class Menu extends Component {
-    render() {
-      let MarginFontAwe = {
-        marginRight:'5px'
-      };
-        return (
-            <div>
+function Menu() {
+  let history = useHistory();
+
+  function signOutClick() {
+    history.goBack();
+  }
+
+  let MarginFontAwe = {
+    marginRight:'5px'
+  };
+
+  let CursorPointer = {
+    cursor: "pointer"
+  };
+
+  return (
+    <div>
   {/* Main Sidebar Container */}
   <aside className="main-sidebar sidebar-light-primary elevation-4">
     {/* Brand Logo */}
@@ -54,10 +65,10 @@ export default class Menu extends Component {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/" exact className="nav-link">
-                <i className="nav-icon fa fa-power-off text-danger" style={MarginFontAwe} /> 
-                    <p>Sign Out</p>
-                </NavLink>
+                <div onClick={signOutClick} style={CursorPointer} activeClassName="nav-link active" className="nav-link">
+                  <i className="nav-icon fa fa-power-off text-danger" style={MarginFontAwe} /> 
+                      <p>Sign Out</p>
+                </div>
               </li>
             </div>
 
@@ -68,7 +79,7 @@ export default class Menu extends Component {
     {/* /.sidebar */}
   </aside>
 </div>
-
-        )
-    }
+  );
 }
+
+export default Menu

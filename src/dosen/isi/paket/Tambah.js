@@ -37,7 +37,7 @@ export default class Tambah extends Component {
                                 <label>Bank Soal</label>
                                 <select className="form-control" name="dosen" required>
                                 <option selected disabled value> - Pilih Bank Soal - </option>
-                                <option value>UTS FAKULTAS INFORMATIKA TAHUN 2021</option>
+                                <option value>101235</option>
                                 </select>
                             </div> 
 
@@ -86,7 +86,12 @@ export default class Tambah extends Component {
 
                             <div className="form-group">
                                 <label>Durasi Pelaksanaan</label>
-                                <input type="text" className="form-control" />
+                                <div className="input-group date" id="waktudurasi" data-target-input="nearest">
+                                <input type="text" className="form-control datetimepicker-input" data-target="#waktudurasi" />
+                                <div className="input-group-append" data-target="#waktudurasi" data-toggle="datetimepicker">
+                                    <div className="input-group-text"><i className="fa fa-clock" /></div>
+                                </div>
+                                </div>
                             </div> 
 
                             <div className="form-group">

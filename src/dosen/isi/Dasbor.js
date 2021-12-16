@@ -8,103 +8,7 @@ drilldown(Highcharts);
 
 export default class Dasbor extends Component {
     render() {
-      const options = {
-        chart: {
-          type: 'column'
-        },
-        title: {
-            text: 'Data Mahasiswa Per Tahun dan Jurusan'
-        },
-        subtitle: {
-            text: ''
-        },
-        accessibility: {
-            announceNewData: {
-                enabled: true
-            }
-        },
-        xAxis: {
-            type: 'category'
-        },
-        yAxis: {
-            title: {
-                text: 'Jumlah'
-            }
-    
-        },
-        legend: {
-            enabled: false
-        },
-        plotOptions: {
-            series: {
-                borderWidth: 0,
-                dataLabels: {
-                    enabled: true,
-                    format: '{point.y}'
-                }
-            }
-        },
-    
-        tooltip: {
-            headerFormat: '<span style="font-size:11px">{series.name}</span><br>',
-            pointFormat: '<span style="color:{point.color}">{point.name}</span>: <b>{point.y}</b><br/>'
-        },
-        credits: {
-          enabled: false
-        },    
-        series: [
-            {
-                name: "Browsers",
-                colorByPoint: true,
-                data: [
-                    {
-                        name: "2021",
-                        y: 1000,
-                        drilldown: "2021"
-                    },
-                    {
-                        name: "2020",
-                        y: 1500,
-                        drilldown: "2020"
-                    },
-                ]
-            }
-        ],
-        drilldown: {
-            series: [
-                {
-                    name: "2021",
-                    id: "2021",
-                    data: [
-                        [
-                            "Teknik Informatika",
-                            300
-                        ],
-                        [
-                          "Sistem Informasi",
-                          700
-                      ],
-                        
-                    ]
-                },
-                {
-                  name: "2020",
-                  id: "2020",
-                  data: [
-                      [
-                          "Teknik Informatika",
-                          7500
-                      ],
-                      [
-                        "Sistem Informasi",
-                        7500
-                    ],
-                      
-                  ]
-                }
-            ]
-        }
-      };
+      
 
         return (
         <div>
@@ -206,21 +110,6 @@ export default class Dasbor extends Component {
     </section>
     {/* Main content */}
     <section className="content">
-    <div className="container-fluid">
-        <div className="row">
-          <div className="col-12">
-            <a href="#" style={{color: 'black'}}>
-              <div className="card">
-                <div className="card-body text-center">
-                  <div>
-                    <HighchartsReact highcharts={Highcharts} options={options} />
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>{/* /.container-fluid */}
       
       <div className="container-fluid">
         <div className="row">

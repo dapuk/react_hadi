@@ -50,7 +50,6 @@ export default class Tabel extends Component {
                         <th>Waktu</th>
                         <th>Status</th>
                         <th>Opsi</th>
-                        <th>Hasil</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -73,9 +72,6 @@ export default class Tabel extends Component {
                             <a href>
                             <i className="fa fa-trash text-danger" title="Hapus" />
                             </a>
-                        </td>
-                        <td>
-                            <button>Export to xls</button>
                         </td>
                         </tr>
                     </tbody>
