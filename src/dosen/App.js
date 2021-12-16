@@ -1,5 +1,4 @@
 // import logo from './logo.svg';
-import Login from '../login/Login';
 import Nav from './Nav';
 import Menu from './Menu';
 import Dasbor from './isi/Dasbor';
@@ -20,7 +19,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react_hadi">
       <div className="wrapper">
         <Nav/>
         <Menu/>
@@ -64,8 +63,6 @@ function App() {
               <Route path="/dosen/tambahbank">
                 <TambahBank/>
               </Route>
-
-              <Route path="/" component={Login} />
             </Switch>
         <Footer />
       </div>

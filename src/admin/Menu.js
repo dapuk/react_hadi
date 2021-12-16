@@ -7,7 +7,7 @@ function Menu() {
   let history = useHistory();
 
   function signOutClick() {
-    history.push("/");
+    history.push("/login");
     window.location.reload();
   }
 

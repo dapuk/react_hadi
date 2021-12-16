@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react_hadi">
     <div className="wrapper">
         
           <Nav/>
