@@ -1,9 +1,14 @@
 import React, { Component } from 'react'
 
+const arr_jawaban = ["B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 export default class Tambah extends Component {
     constructor(props) {
         super(props);
-        this.state = { values: [] };
+        this.state = { 
+            values: [],
+            loop: "A",
+            count: 1
+         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
@@ -11,10 +16,14 @@ export default class Tambah extends Component {
         return this.state.values.map((el, i) => 
             <div key={i}>
                 <div className="form-group">
+                    <div className="form-check">
+                        <input className="form-check-input" type="radio" id={"rd_jawaban"+i} name="radio_jawaban" value={arr_jawaban[i]} />
+                        <label className="form-check-label" id={"label_jawaban"+i}>{arr_jawaban[i]}</label>
+                    </div>
                     <button className="btn btn-success btn-sm" onClick={this.addClick.bind(this, i)}>
                         <i className="fa fa-plus"></i>
                     </button>
-                    <input type="text" value={""} onChange={this.handleChange.bind(this, i)}/>
+                    <input type="text" value={el||''} onChange={this.handleChange.bind(this, i)}/>
                     <input type="file"></input>
                     <button className="btn btn-danger btn-sm" onClick={this.removeClick.bind(this, i)}>
                         <i className="fa fa-times"></i>
@@ -30,7 +39,7 @@ export default class Tambah extends Component {
         this.setState({ values });
      }
      
-     addClick(){
+     addClick(i){
        this.setState(prevState => ({ values: [...prevState.values, '']}))
      }
 
@@ -109,6 +118,11 @@ export default class Tambah extends Component {
                             <div className="form-group">
                                 <label>Jawaban</label>
                                 <div className="form-group">
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="radio_jawaban" value="A"/>
+                                        <label className="form-check-label">A</label>
+                                    </div>
+
                                     <button className="btn btn-success btn-sm" onClick={this.addClick.bind(this)}>
                                         <i className="fa fa-plus"></i>
                                     </button>
@@ -117,10 +131,6 @@ export default class Tambah extends Component {
                                 </div>
                                 
                                 {this.createUI()}
-
-                                <label>Kunci Jawaban</label>
-                                <br />
-                                <input type="text" className="form-group" value=""/>
                             </div>                          
                         </div>
                         <div className="card-footer">
@@ -138,10 +148,5 @@ export default class Tambah extends Component {
   {/* /.content-wrapper */}</div>
 
         )
-    }
-
-    appendInput() {
-        var newInput = `input-${this.state.inputs.length}`;
-        this.setState(prevState => ({ inputs: prevState.inputs.concat([newInput]) }));
     }
 }
