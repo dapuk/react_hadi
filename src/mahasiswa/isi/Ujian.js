@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom';
 
 export default class Ujian extends Component {
-    handleClick(e) {
-        e.preventDefault();
-    }
+    // handleClick(e) {
+    //     e.preventDefault();
+    // }
 
     render() {
         let MarginFontAwe = {
@@ -49,7 +49,7 @@ export default class Ujian extends Component {
                                     <td>
                                     01, August 2021 - 01:46:46                    </td>
                                     <td>
-                                    <NavLink exact to="/mahasiswa/prosesujian" onClick={this.handleClick} className="btn btn-xs btn-primary disabled">
+                                    <NavLink exact to="/mahasiswa/prosesujian" className="btn btn-xs btn-primary">
                                         <i className="nav-icon fas fa-play" style={MarginFontAwe} /> Mulai
                                     </NavLink>
                                     </td>
