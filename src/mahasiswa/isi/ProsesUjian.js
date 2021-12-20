@@ -109,13 +109,29 @@ export default class ProsesUjian extends Component {
                                 <div className="col-8">
                                     Gambar disamping merupakan bagian dari ....
                                     <br />
-                                    <input type="radio" name="jawaban" value="Transmisi Sistem"/ > Transmisi Sistem
-                                    <br />
-                                    <input type="radio" name="jawaban" value="Komunikasi Suara"/ > Komunikasi Suara
-                                    <br />
-                                    <input type="radio" name="jawaban" value="Komunikasi Suara"/ > Sinkronasi
-                                    <br />
-                                    <input type="radio" name="jawaban" value="Komunikasi Suara"/ > Komunikasi Data
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="radio_jawaban" value="Transmisi Sistem"/>
+                                        <label className="form-check-label">A.</label>
+                                        Transmisi Sistem
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="radio_jawaban" value="Komunikasi Suara"/>
+                                        <label className="form-check-label">B.</label>
+                                        Komunikasi Suara
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="radio_jawaban" value="Sinkronasi"/>
+                                        <label className="form-check-label">C.</label>
+                                        Sinkronasi
+                                    </div>
+
+                                    <div className="form-check">
+                                        <input className="form-check-input" type="radio" name="radio_jawaban" value="Komunikasi Data"/>
+                                        <label className="form-check-label">D.</label>
+                                        Komunikasi Data
+                                    </div>
                                 </div>
 
                                 <div className="col-4">
