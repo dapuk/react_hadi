@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react'
 import axios from 'axios'
-import qs from 'querystring'
+import qs from 'query-string'
 
 let MarginFontAwe = {
     marginRight:'5px'
