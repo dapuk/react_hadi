@@ -4,12 +4,18 @@ import Menu from './Menu';
 import Dasbor from './isi/Dasbor';
 import Dosen from './isi/Dosen';
 import Mahasiswa from './isi/Mahasiswa';
-import Matakuliah from './isi/Matakuliah';
+import Matakuliah from './isi/Matakuliah/Tabel';
+import TambahMatakuliah from './isi/Matakuliah/Tambah';
+import UbahMatakuliah from './isi/Matakuliah/Ubah';
 import Profil from './isi/Profil';
 import Footer from './Footer';
 import { HashRouter as Router, Switch, Route} from 'react-router-dom';
+import { render } from 'react-dom';
+import {Link, useHistory} from 'react-router-dom'
+
 
 function App() {
+  let history = useHistory();
   return (
     <Router>
     <div className="wrapper">
@@ -33,9 +39,11 @@ function App() {
               <Profil />
             </Route>
 
-            <Route path="/admin/matakuliah" exact>
-              <Matakuliah />
-            </Route>
+            <Route path="/admin/matakuliah" component={Matakuliah} exact />
+
+            <Route path="/admin/tambahmatakuliah" component={TambahMatakuliah} exact />
+
+            <Route path="/admin/ubahmatakuliah" component={UbahMatakuliah} exact />
           </Switch>
           <Footer />
     </div>

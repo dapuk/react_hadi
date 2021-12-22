@@ -1,0 +1,12 @@
+{
+  "tbl_matkul": [
+    {
+      "id": 1,
+      "nama_matkul": "Komunikasi Data"
+    },
+    {
+      "nama_matkul": "Business Intelegence",
+      "id": 2
+    }
+  ]
+}
