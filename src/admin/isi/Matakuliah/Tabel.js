@@ -29,7 +29,7 @@ class MatKulList extends Component {
     })
   }
 
-  DeleteMatkul = (idMatkul) => {
+  DeleteMatkul = async (idMatkul) => {
     const {matakuliah} = this.state
     const data = qs.stringify({
       id:idMatkul

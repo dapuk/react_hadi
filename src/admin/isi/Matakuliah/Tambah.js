@@ -23,7 +23,7 @@ class Tambah extends PureComponent {
         this.setState({[e.target.name] : e.target.value})
     }
 
-    addMatkul = () => {
+    addMatkul = async () => {
         api.post('/tbl_matkul', {
             nama_matkul: this.state.nama_matkul
         }).then( json => {

@@ -21,13 +21,13 @@ class Ubah extends Component {
         this.setState({[e.target.name] : e.target.value})
     }
 
-    ubahMatkul = (idMatkul) => {
+    ubahMatkul = async (idMatkul) => {
         const data = qs.stringify({
             id:idMatkul,
             nama_matkul: this.state.nama_matkul
         });
 
-        api.put('/tbl_matkul/'+idMatkul, data)
+        api.patch('/tbl_matkul/'+idMatkul, data)
         .then( json => {
             this.setState({
                 id: this.state.id,
