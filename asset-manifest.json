@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "./static/js/main.a21918c7.chunk.js",
-    "main.js.map": "./static/js/main.a21918c7.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.2475d675.js",
-    "runtime-main.js.map": "./static/js/runtime-main.2475d675.js.map",
-    "static/js/2.ad780531.chunk.js": "./static/js/2.ad780531.chunk.js",
-    "static/js/2.ad780531.chunk.js.map": "./static/js/2.ad780531.chunk.js.map",
-    "index.html": "./index.html",
-    "static/js/2.ad780531.chunk.js.LICENSE.txt": "./static/js/2.ad780531.chunk.js.LICENSE.txt",
-    "static/media/GambarUjian.569487a8.png": "./static/media/GambarUjian.569487a8.png",
-    "static/media/Logo-unj.63b6c602.png": "./static/media/Logo-unj.63b6c602.png"
+    "main.js": "/%3Crepo-name%3E/static/js/main.b935670f.chunk.js",
+    "main.js.map": "/%3Crepo-name%3E/static/js/main.b935670f.chunk.js.map",
+    "runtime-main.js": "/%3Crepo-name%3E/static/js/runtime-main.8eff3c0f.js",
+    "runtime-main.js.map": "/%3Crepo-name%3E/static/js/runtime-main.8eff3c0f.js.map",
+    "static/js/2.ad780531.chunk.js": "/%3Crepo-name%3E/static/js/2.ad780531.chunk.js",
+    "static/js/2.ad780531.chunk.js.map": "/%3Crepo-name%3E/static/js/2.ad780531.chunk.js.map",
+    "index.html": "/%3Crepo-name%3E/index.html",
+    "static/js/2.ad780531.chunk.js.LICENSE.txt": "/%3Crepo-name%3E/static/js/2.ad780531.chunk.js.LICENSE.txt",
+    "static/media/GambarUjian.569487a8.png": "/%3Crepo-name%3E/static/media/GambarUjian.569487a8.png",
+    "static/media/Logo-unj.63b6c602.png": "/%3Crepo-name%3E/static/media/Logo-unj.63b6c602.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.2475d675.js",
+    "static/js/runtime-main.8eff3c0f.js",
     "static/js/2.ad780531.chunk.js",
-    "static/js/main.a21918c7.chunk.js"
+    "static/js/main.b935670f.chunk.js"
   ]
 }
