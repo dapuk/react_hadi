@@ -3,7 +3,10 @@ import axios from 'axios'
 import qs from 'query-string'
 import {Link} from 'react-router-dom'
 
-const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/tbl_matkul/';
+const api = axios.create({
+    baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
+})
+
 class Ubah extends Component {
     constructor(props){
         super(props);
@@ -24,7 +27,7 @@ class Ubah extends Component {
             nama_matkul: this.state.nama_matkul
         });
 
-        axios.put(api+idMatkul, data)
+        api.put('/tbl_matkul/'+idMatkul, data)
         .then( json => {
             this.setState({
                 id: this.state.id,

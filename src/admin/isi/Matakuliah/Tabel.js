@@ -7,7 +7,10 @@ let MarginFontAwe = {
   marginRight:'5px'
 };
 
-const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/tbl_matkul/';
+const api = axios.create({
+  baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
+})
+
 class MatKulList extends Component {
   constructor(props){
     super(props)
@@ -18,7 +21,7 @@ class MatKulList extends Component {
   }
 
   componentDidMount(){
-    axios.get(api)
+    api.get('/tbl_matkul')
     .then(res=>{
       this.setState({
         matakuliah: res.data
@@ -32,7 +35,7 @@ class MatKulList extends Component {
       id:idMatkul
     })
 
-    axios.delete(api+idMatkul,
+    api.delete('/tbl_matkul/'+idMatkul,
       {
         data: data,
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
