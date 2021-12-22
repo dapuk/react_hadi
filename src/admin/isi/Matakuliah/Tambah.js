@@ -6,7 +6,7 @@ let MarginFontAwe = {
     marginRight:'5px'
   };
   
-const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/';
+const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/tbl_matkul';
 class Tambah extends PureComponent {   
     constructor(props){
         super(props)
@@ -21,7 +21,7 @@ class Tambah extends PureComponent {
     }
 
     addMatkul = () => {
-        axios.post(api+'tbl_matkul', {
+        axios.post(api, {
             nama_matkul: this.state.nama_matkul
         }).then( json => {
             alert('Data Mata Kuliah berhasil ditambah!')

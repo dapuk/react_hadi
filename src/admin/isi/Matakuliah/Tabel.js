@@ -7,7 +7,7 @@ let MarginFontAwe = {
   marginRight:'5px'
 };
 
-const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/';
+const api = 'https://my-json-server.typicode.com/dapuk/dbjsonhadi/tbl_matkul/';
 class MatKulList extends Component {
   constructor(props){
     super(props)
@@ -32,7 +32,7 @@ class MatKulList extends Component {
       id:idMatkul
     })
 
-    axios.delete(api+'tbl_matkul/'+idMatkul,
+    axios.delete(api+idMatkul,
       {
         data: data,
         headers: {'Content-type': 'application/x-www-form-urlencoded'}
