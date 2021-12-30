@@ -8,5 +8,29 @@
       "nama_matkul": "Business Intelegence",
       "id": 2
     }
+  ],
+  "paket_soal": [
+    {
+      "bank_soal": "123456",
+      "durasi": "60",
+      "id": 1,
+      "jenis_ujian": "UTS",
+      "jumlah_soal": "40",
+      "matkul": "Dasar Pemrograman",
+      "no_paket_ujian": "10101",
+      "waktu_mulai": "30/12/2021 09:09",
+      "waktu_selesai": "31/12/2021 12:56"
+    },
+    {
+      "id": 2,
+      "bank_soal": "123456",
+      "matkul": "Bahasa Inggris",
+      "jenis_ujian": "UAS",
+      "no_paket_ujian": "46132",
+      "waktu_mulai": "30/12/2021 07:00",
+      "waktu_selesai": "31/12/2021 11:00",
+      "durasi": "60",
+      "jumlah_soal": "20"
+    }
   ]
 }

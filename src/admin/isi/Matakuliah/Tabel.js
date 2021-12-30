@@ -8,6 +8,7 @@ let MarginFontAwe = {
 };
 
 const api = axios.create({
+  // baseURL: 'http://localhost:8000/'
   baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
 })
 

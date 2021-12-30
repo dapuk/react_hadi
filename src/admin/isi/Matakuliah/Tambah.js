@@ -7,8 +7,18 @@ let MarginFontAwe = {
   };
   
 const api = axios.create({
+    // baseURL: 'http://localhost:8000/'
     baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
 })
+
+const headers = {
+    // 'Accept': 'application/json',
+    'Content-Type': 'application/json; charset=UTF-8',
+    // 'Authorization': 'this-can-be-anything',
+    // 'Access-Control-Allow-Origin': '*',
+    // 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+    // 'Content-type': 'application/x-www-form-urlencoded'
+};
 
 class Tambah extends PureComponent {   
     constructor(props){
@@ -22,8 +32,23 @@ class Tambah extends PureComponent {
     handleChange = (e) => {
         this.setState({[e.target.name] : e.target.value})
     }
+    
 
     addMatkul = async () => {
+        // await fetch(url+'/tbl_matkul', {
+        //     method: 'POST',
+        //     body: JSON.stringify({
+        //         "nama_matkul": this.state.nama_matkul
+        //     }),
+        //     headers: headers,
+        // }).then( respone => {
+        //     respone.json()
+        //     alert('Data Mata Kuliah berhasil ditambah!')
+        //     this.props.history.push('/admin/matakuliah')
+        // }).then((json) => 
+        //     console.log(json
+        // ));
+
         api.post('/tbl_matkul', {
             nama_matkul: this.state.nama_matkul
         }).then( json => {

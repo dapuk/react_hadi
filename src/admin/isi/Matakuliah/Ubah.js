@@ -4,6 +4,7 @@ import qs from 'query-string'
 import {Link} from 'react-router-dom'
 
 const api = axios.create({
+    // baseURL: 'http://localhost:8000/'
     baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
 })
 
@@ -11,9 +12,22 @@ class Ubah extends Component {
     constructor(props){
         super(props);
 
-        this.state = {
-            id: this.props.location.state.id,
-            nama_matkul: this.props.location.state.nama_matkul
+        let routeState
+        if(this.props.location.state){
+            localStorage.setItem('routeState', JSON.stringify(this.props.location.state))
+            routeState = this.props.location.state
+        } else {
+            routeState = localStorage.getItem('routeState')
+            if(routeState) routeState = JSON.parse(routeState)
+        }
+
+        if(routeState){
+            this.state = {
+                id: this.props.location.state.id,
+                nama_matkul: this.props.location.state.nama_matkul
+            }
+        } else {
+            alert('No Data!');
         }
     }
 
@@ -27,7 +41,7 @@ class Ubah extends Component {
             nama_matkul: this.state.nama_matkul
         });
 
-        api.patch('/tbl_matkul/'+idMatkul, data)
+        api.put('/tbl_matkul/'+idMatkul, data)
         .then( json => {
             this.setState({
                 id: this.state.id,

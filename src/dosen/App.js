@@ -11,6 +11,7 @@ import TambahUjian from './isi/ujian/Tambah';
 // Paket Soal
 import TabelPaket from './isi/paket/Tabel';
 import TambahPaket from './isi/paket/Tambah';
+import UbahPaket from './isi/paket/Ubah';
 // Bank Soal
 import TabelBank from './isi/bank/Tabel';
 import TambahBank from './isi/bank/Tambah';
@@ -48,13 +49,10 @@ function App() {
                 <TambahUjian/>
               </Route>
 
-              <Route path="/dosen/paket/">
-                <TabelPaket/>
-              </Route>
+              <Route path="/dosen/paket/" component={TabelPaket} />
 
-              <Route path="/dosen/tambahpaket">
-                <TambahPaket/>
-              </Route>
+              <Route path="/dosen/tambahpaket" component={TambahPaket} />
+              <Route path="/dosen/ubahpaket" component={UbahPaket} />
 
               <Route path="/dosen/bank/">
                 <TabelBank/>

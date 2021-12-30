@@ -6,8 +6,8 @@ export default class Tambah extends Component {
         super(props);
         this.state = { 
             values: [],
-            loop: "A",
-            count: 1
+            count: 0,
+            soal: 1
          };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
@@ -37,23 +37,40 @@ export default class Tambah extends Component {
         let values = [...this.state.values];
         values[i] = event.target.value;
         this.setState({ values });
+        this.setState(prevState => {
+            return {count: prevState.count + 1}
+         })
      }
      
-     addClick(i){
+     addClick(){
        this.setState(prevState => ({ values: [...prevState.values, '']}))
+       this.setState(prevState => {
+        return {count: prevState.count + 1}
+     })
      }
 
      removeClick(i){
         let values = [...this.state.values];
         values.splice(i,1);
         this.setState({ values });
+        this.setState(prevState => {
+            return {count: prevState.count - 1}
+         })
      }
 
      handleSubmit(event) {
         alert('A name was submitted: ' + this.state.values.join(', '));
         event.preventDefault();
       }
-   
+
+    nextClick = (e) => {
+        this.setState(prevState => {
+            return {soal: prevState.soal + 1}
+         })
+
+        // let values = this.state.values.splice(0, this.state.count);
+        // this.setState({ values });
+    }
 
     render() {
         return (
@@ -108,7 +125,7 @@ export default class Tambah extends Component {
                         </div>
                         <div className="card-body">
                             <div className="form-group">
-                                Soal No <input type="text" width="10px" /> dari  <input type="text" />
+                                Soal No <input type="text" width="3px" value={this.state.soal} />
                                 <br />
                                 <br />
                                 <textarea id="summernote" defaultValue={""} />
@@ -134,7 +151,7 @@ export default class Tambah extends Component {
                             </div>                          
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-success">Selanjutnya</button>
+                            <button type="submit" onClick={this.nextClick} className="btn btn-success">Selanjutnya</button>
                             <br />
                             <button type="submit" className="btn btn-warning">Simpan Sebagai Draft</button>
                         </div>

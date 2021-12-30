@@ -1,7 +1,55 @@
 import React, { Component } from 'react'
+import axios from 'axios'
+import qs from 'query-string'
 import {Link} from 'react-router-dom'
 
-export default class Tabel extends Component {
+let MarginFontAwe = {
+    marginRight:'5px'
+};
+
+const api = axios.create({
+    // baseURL: 'http://localhost:8000/'
+    baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
+})
+
+class Tabel extends Component {
+    constructor(props){
+        super(props)
+
+        this.state = {
+            paket_soal: [],
+        }
+    }
+
+    componentDidMount(){
+        api.get('/paket_soal')
+        .then(res=>{
+            this.setState({
+                paket_soal: res.data
+            })
+        })
+    }
+
+    DeletePaket = async (idPaket) => {
+        const {paket_soal} = this.state
+        const data = qs.stringify({
+            id:idPaket
+    })
+
+    api.delete('/paket_soal/'+idPaket,
+            {
+            data: data,
+            headers: {'Content-type': 'application/x-www-form-urlencoded'}
+            }
+        ).then(json =>{
+            this.setState({
+                paket_soal: paket_soal.filter(paket_soal => paket_soal.id !== idPaket)
+            })
+            alert('Data Paket Soal berhasil dihapus!')
+            this.props.history.push('/dosen/paket')
+        })
+    }
+
     render() {
         return (
         <div>
@@ -42,39 +90,58 @@ export default class Tabel extends Component {
                     <table className="dataTable table table-bordered table-hover">
                     <thead>
                         <tr>
-                        <th>#</th>
+                        <th>Bank Soal</th>
                         <th>Mata Kuliah</th>
                         <th>Jenis Ujian</th>
-                        <th>Nomor Paket Ujian</th>
+                        <th>Nomor Paket Soal</th>
                         <th>Waktu Mulai</th>
                         <th>Waktu Berakhir</th>
                         <th>Durasi</th>
+                        <th>Jumlah Soal</th>
                         <th>Opsi</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                        <td>1</td>
-                        <td>Dasar Pemrograman</td>
-                        <td>UTS</td>
-                        <td>10101</td>
-                        <td>
-                            31, July 2021 - 17:26:52                    
-                        </td>
-                        <td>
-                            31, July 2021 - 17:26:52                    
-                        </td>
-                        <td>
-                            60 Menit                    
-                        </td>
-                        <td>
-                            <Link to="/dosen/ubahpaket/" className="fa fa-edit text-info" >
-                            </Link>    
-                            <a href>
-                            <i className="fa fa-trash text-danger" title="Hapus" />
-                            </a>
-                        </td>
-                        </tr>
+                        {this.state.paket_soal.map(paket_soal=>
+                          <tr key={paket_soal.id}>
+                            <td>{paket_soal.bank_soal}</td>
+                            <td>{paket_soal.matkul}</td>
+                            <td>{paket_soal.jenis_ujian}</td>
+                            <td>{paket_soal.no_paket_ujian}</td>
+                            <td>{paket_soal.waktu_mulai}</td>
+                            <td>{paket_soal.waktu_selesai}</td>
+                            <td>{paket_soal.durasi} Menit</td>
+                            <td>{paket_soal.jumlah_soal}</td>
+                            <td>
+                              <Link to=
+                                {
+                                  {
+                                    pathname: '/dosen/ubahpaket',
+                                    state: {
+                                      id: paket_soal.id,
+                                      bank_soal: paket_soal.bank_soal,
+                                      matkul: paket_soal.matkul,
+                                      jenis_ujian: paket_soal.jenis_ujian,
+                                      no_paket_ujian: paket_soal.no_paket_ujian,
+                                      waktu_mulai: paket_soal.waktu_mulai,
+                                      waktu_selesai: paket_soal.waktu_selesai,
+                                      durasi: paket_soal.durasi,
+                                      jumlah_soal: paket_soal.jumlah_soal,
+                                    }
+                                  }
+                                } 
+                                >
+                                  <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
+                                    <i className="fas fa-edit" /> Ubah
+                                  </button>
+                              </Link>
+
+                              <button onClick={()=>this.DeletePaket(paket_soal.id)} className="btn btn-sm btn-danger">
+                                <i className="fas fa-trash" /> Hapus
+                              </button>
+                            </td>
+                          </tr>
+                        )}
                     </tbody>
                     </table>
                 </div>
@@ -90,3 +157,5 @@ export default class Tabel extends Component {
         )
     }
 }
+
+export default Tabel;
