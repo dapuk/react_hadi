@@ -15,6 +15,7 @@ import UbahPaket from './isi/paket/Ubah';
 // Bank Soal
 import TabelBank from './isi/bank/Tabel';
 import TambahBank from './isi/bank/Tambah';
+import UbahBank from './isi/bank/Ubah';
 import Footer from './Footer';
 import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -29,9 +30,7 @@ function App() {
                 <Dasbor/>
               </Route>
 
-              <Route path="/dosen/profil/">
-                <Profil/>
-              </Route>
+              <Route path="/dosen/profil/" component={Profil} />
               
               <Route path="/dosen/hasilujian/">
                 <HasilUjian/>
@@ -54,13 +53,9 @@ function App() {
               <Route path="/dosen/tambahpaket" component={TambahPaket} />
               <Route path="/dosen/ubahpaket" component={UbahPaket} />
 
-              <Route path="/dosen/bank/">
-                <TabelBank/>
-              </Route>
-
-              <Route path="/dosen/tambahbank">
-                <TambahBank/>
-              </Route>
+              <Route path="/dosen/bank/" component={TabelBank} />
+              <Route path="/dosen/tambahbank" component={TambahBank} />
+              <Route path="/dosen/ubahbank" component={UbahBank} />
             </Switch>
         <Footer />
       </div>

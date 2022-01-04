@@ -19,17 +19,11 @@ function App() {
             <Dasbor />
           </Route>
 
-          <Route path="/mahasiswa/ujian">
-            <Ujian />
-          </Route>
+          <Route path="/mahasiswa/ujian" component={Ujian} />
 
-          <Route path="/mahasiswa/profil">
-            <Profil />
-          </Route>
+          <Route path="/mahasiswa/profil" component={Profil} />
 
-          <Route path="/mahasiswa/prosesujian">
-            <ProsesUjian />
-          </Route>
+          <Route path="/mahasiswa/prosesujian" component={ProsesUjian} />
         </Switch>
         <Footer />
       </div>

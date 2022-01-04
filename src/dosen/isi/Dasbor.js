@@ -49,18 +49,6 @@ export default class Dasbor extends Component {
             </a>
           </div>
         </div>
-
-        <div className="row">
-          <div className="col-12">
-            <div className="card">
-              <div className="card-body">
-                <div className="form-group"><label>Pilih Tanggal</label>
-                  <input type="text" name="periodik" className="form-control float-right" id="range-date-full" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       
         <div className="row">
           <div className="col-sm-4">

@@ -92,12 +92,14 @@ class Tabel extends Component {
                         <tr>
                         <th>Bank Soal</th>
                         <th>Mata Kuliah</th>
+                        <th>Kode Seksi</th>
                         <th>Jenis Ujian</th>
                         <th>Nomor Paket Soal</th>
                         <th>Waktu Mulai</th>
                         <th>Waktu Berakhir</th>
                         <th>Durasi</th>
                         <th>Jumlah Soal</th>
+                        <th>Status</th>
                         <th>Opsi</th>
                         </tr>
                     </thead>
@@ -106,12 +108,17 @@ class Tabel extends Component {
                           <tr key={paket_soal.id}>
                             <td>{paket_soal.bank_soal}</td>
                             <td>{paket_soal.matkul}</td>
+                            <td>{paket_soal.kode_seksi}</td>
                             <td>{paket_soal.jenis_ujian}</td>
                             <td>{paket_soal.no_paket_ujian}</td>
                             <td>{paket_soal.waktu_mulai}</td>
                             <td>{paket_soal.waktu_selesai}</td>
                             <td>{paket_soal.durasi} Menit</td>
                             <td>{paket_soal.jumlah_soal}</td>
+                            <td>
+                                <button>Draft</button>
+                                <button>Terbit</button>
+                            </td>
                             <td>
                               <Link to=
                                 {
@@ -121,6 +128,7 @@ class Tabel extends Component {
                                       id: paket_soal.id,
                                       bank_soal: paket_soal.bank_soal,
                                       matkul: paket_soal.matkul,
+                                      kode_seksi: paket_soal.kode_seksi,
                                       jenis_ujian: paket_soal.jenis_ujian,
                                       no_paket_ujian: paket_soal.no_paket_ujian,
                                       waktu_mulai: paket_soal.waktu_mulai,
@@ -136,7 +144,7 @@ class Tabel extends Component {
                                   </button>
                               </Link>
 
-                              <button onClick={()=>this.DeletePaket(paket_soal.id)} className="btn btn-sm btn-danger">
+                              <button onClick={()=> {if(window.confirm('Yakin ingin dihapus?')){this.DeletePaket(paket_soal.id)};}} className="btn btn-sm btn-danger">
                                 <i className="fas fa-trash" /> Hapus
                               </button>
                             </td>

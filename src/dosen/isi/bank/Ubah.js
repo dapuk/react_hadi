@@ -11,29 +11,33 @@ const api = axios.create({
   baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
 })
 
-const headers = {
-  // 'Accept': 'application/json',
-  'Content-Type': 'application/json; charset=UTF-8',
-  // 'Authorization': 'this-can-be-anything',
-  // 'Access-Control-Allow-Origin': '*',
-  // 'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-  // 'Content-type': 'application/x-www-form-urlencoded'
-};
-
 const arr_jawaban = ["B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
-class Tambah extends Component {
+class Ubah extends Component {
   constructor(props){
       super(props)
+      
+      let routeState
+        if(this.props.location.state){
+            localStorage.setItem('routeState', JSON.stringify(this.props.location.state))
+            routeState = this.props.location.state
+        } else {
+            routeState = localStorage.getItem('routeState')
+            if(routeState) routeState = JSON.parse(routeState)
+        }
 
-      this.state = {
-          values: [],
-          count: 0,
-          soal: 1,
-          id: '',
-          bank_soal: '',
-          matkul: ''
-      }
+        if(routeState){
+            this.state = {
+                id: routeState.id,
+                bank_soal: routeState.bank_soal,
+                matkul: routeState.matkul,
+                values: [],
+                count: 0,
+                soal: 1,
+            }
+        } else {
+            alert('No Data!');
+        }
   }
 
   handleChange = (e) => {
@@ -41,29 +45,24 @@ class Tambah extends Component {
   }
 
 
-  addBank = async () => {
-      // await fetch(url+'/tbl_matkul', {
-      //     method: 'POST',
-      //     body: JSON.stringify({
-      //         "nama_matkul": this.state.nama_matkul
-      //     }),
-      //     headers: headers,
-      // }).then( respone => {
-      //     respone.json()
-      //     alert('Data Mata Kuliah berhasil ditambah!')
-      //     this.props.history.push('/admin/matakuliah')
-      // }).then((json) => 
-      //     console.log(json
-      // ));
+  ubahBank = async (idBank) => {
+    const data = qs.stringify({
+        id:idBank,
+        bank_soal: this.state.bank_soal,
+        matkul: this.state.matkul,
+    });
 
-      api.post('/bank_soal', {
-          bank_soal: this.state.bank_soal,
-          matkul: this.state.matkul
-      }).then( json => {
-          alert('Data Bank Soal berhasil ditambah!')
-          this.props.history.push('/dosen/bank')
-      })
-  }
+    api.put('/bank_soal/'+idBank, data)
+    .then( json => {
+        this.setState({
+            id: this.state.id,
+            bank_soal: this.state.bank_soal,
+            matkul: this.state.matkul,
+          })
+        alert('Data Bank Soal berhasil diubah!')
+        this.props.history.push('/dosen/bank')
+    })
+}
 
   createUI(){
     return this.state.values.map((el, i) => 
@@ -178,7 +177,7 @@ nextClick = (e) => {
                             </div> 
                           </div>
                           <div className="card-footer">
-                              <button type="submit" className="btn btn-primary" onClick={this.addBank}>Simpan</button>
+                              <button type="submit" className="btn btn-primary" onClick={()=>this.ubahBank(this.state.id)} >Simpan</button>
                               <br />
                           </div>
                       </div>
@@ -236,4 +235,4 @@ nextClick = (e) => {
       }
 }
 
-export default Tambah;
+export default Ubah;

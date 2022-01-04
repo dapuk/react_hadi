@@ -31,6 +31,7 @@ class Tambah extends Component {
             id: '',
             bank_soal: '',
             matkul: '',
+            kode_seksi: '',
             jenis_ujian: '',
             no_paket_ujian: '',
             waktu_mulai: '',
@@ -63,6 +64,7 @@ class Tambah extends Component {
         api.post('/paket_soal', {
             bank_soal: this.state.bank_soal,
             matkul: this.state.matkul,
+            kode_seksi: this.state.kode_seksi,
             jenis_ujian: this.state.jenis_ujian,
             no_paket_ujian: this.state.no_paket_ujian,
             waktu_mulai: this.state.waktu_mulai,
@@ -124,6 +126,11 @@ class Tambah extends Component {
                                                 <option value="Bahasa Inggris">Bahasa Inggris</option>
                                                 </select>
                                             </div> 
+
+                                            <div className="form-group">
+                                                <label>Kode Seksi</label>
+                                                <input type="text" className="form-control" name="kode_seksi" value={this.state.kode_seksi}  onChange={this.handleChange}  />
+                                            </div>  
 
                                             <div className="form-group">
                                                 <label>Jenis Ujian</label>

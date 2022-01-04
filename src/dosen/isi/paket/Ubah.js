@@ -11,14 +11,6 @@ const api = axios.create({
     baseURL: 'https://my-json-server.typicode.com/dapuk/dbjsonhadi'
 })
 
-const handleChangeMulai = (date) => {
-    alert(date);
-}
-
-const handleChangeSelesai = (date) => {
-    alert(date);
-}
-
 
 class Ubah extends Component {
     

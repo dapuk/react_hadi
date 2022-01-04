@@ -12,6 +12,7 @@
   "paket_soal": [
     {
       "bank_soal": "123456",
+      "kode_seksi": "112345",
       "durasi": "60",
       "id": 1,
       "jenis_ujian": "UTS",
@@ -22,15 +23,49 @@
       "waktu_selesai": "31/12/2021 12:56"
     },
     {
-      "id": 2,
       "bank_soal": "123456",
-      "matkul": "Bahasa Inggris",
+      "matkul": "Dasar Pemrograman",
+      "kode_seksi": "11111",
       "jenis_ujian": "UAS",
-      "no_paket_ujian": "46132",
-      "waktu_mulai": "30/12/2021 07:00",
-      "waktu_selesai": "31/12/2021 11:00",
+      "no_paket_ujian": "56451",
+      "waktu_mulai": "19/01/2022 00:00",
+      "waktu_selesai": "14/01/2022 00:00",
       "durasi": "60",
-      "jumlah_soal": "20"
+      "jumlah_soal": "40",
+      "id": 3
+    }
+  ],
+  "bank_soal": [
+    {
+      "id": 1,
+      "bank_soal": "123456",
+      "matkul": "Dasar Pemrograman"
+    },
+    {
+      "bank_soal": "101235",
+      "id": 2,
+      "matkul": "Kalkulus"
+    }
+  ],
+  "profil_mahasiswa": [
+    {
+      "angkatan": "2017",
+      "email": "Hadi@hadi.com",
+      "id": 1,
+      "nama": "Hadi, S.Pd",
+      "nim": "001",
+      "sandi": "123456",
+      "telpon": "0856124596325"
+    }
+  ],
+  "profil_dosen": [
+    {
+      "email": "email@dosen.com",
+      "id": 1,
+      "nama": "Dosen",
+      "nip": "001",
+      "sandi": "123456",
+      "telpon": "0856125441123"
     }
   ]
 }

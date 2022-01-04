@@ -57,6 +57,24 @@ export default class Ujian extends Component {
                                     Skor nilai
                                     </td>
                                 </tr>
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>Dasar Pemrograman</td>
+                                    <td>UTS</td>
+                                    <td>
+                                    01, August 2021 - 01:46:46                    </td>
+                                    <td>
+                                    01, August 2021 - 01:46:46                    </td>
+                                    <td>
+                                    <NavLink exact to="/mahasiswa/prosesujian" className="btn btn-xs btn-danger disabled">
+                                        <i className="nav-icon fas fa-lock" style={MarginFontAwe} /> Selesai
+                                    </NavLink>
+                                    </td>
+                                    <td>
+                                    80
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
                             </div>

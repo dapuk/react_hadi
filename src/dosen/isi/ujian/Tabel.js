@@ -32,9 +32,9 @@ export default class Tabel extends Component {
                 <div className="card-header">
                     <h3 className="card-title">Data Soal Ujian</h3>
                     <div className="card-tools">
-                        <Link to="/dosen/tambahujian/" className="btn btn-sm btn-primary">
+                        {/* <Link to="/dosen/tambahujian/" className="btn btn-sm btn-primary">
                             <i className="fas fa-plus" /> Tambah Ujian
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 {/* /.card-header */}
@@ -49,29 +49,22 @@ export default class Tabel extends Component {
                         <th>Jenis Ujian</th>
                         <th>Waktu</th>
                         <th>Status</th>
-                        <th>Opsi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>11111</td>
-                        <td>001</td>
+                        <td>11411</td>
+                        <td>112345</td>
                         <td>Dasar Pemrograman</td>
                         <td>
-                            UTS </td>
-                        <td>
-                            31, July 2021 - 17:26:52                    </td>
-                        <td>
-                            <button>Draft</button>
-                            <button>Terbit</button>
+                            UAS 
+                        </td>
+                        <td>                  
+                            2021/07/31 17:26:52                     
                         </td>
                         <td>
-                            <Link to="/dosen/ubahujian/" className="fa fa-edit text-info" >
-                            </Link>    
-                            <a href>
-                            <i className="fa fa-trash text-danger" title="Hapus" />
-                            </a>
+                            Sedang Berlangsung
                         </td>
                         </tr>
                     </tbody>

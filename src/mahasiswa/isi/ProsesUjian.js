@@ -1,7 +1,17 @@
 import React, { Component } from 'react'
 import gambar from './GambarUjian.png';
 
-export default class ProsesUjian extends Component {
+class ProsesUjian extends Component {
+    constructor(props){        
+        super(props);
+    }
+    
+    akhiriUjian = (e) => {
+        alert('Ujian Berhasil Diakhiri')
+        alert('Anda mendapatkan nilai 95')
+        this.props.history.push('/mahasiswa/ujian')
+    }
+
     render() {
         let posisikanan = {
             float:'right'
@@ -95,6 +105,9 @@ export default class ProsesUjian extends Component {
                             </div>
                             <div className="modal-footer justify-content-between">
                                 <button type="button" className="btn btn-default" data-dismiss="modal">Tutup</button>
+                                <button type="button"  onClick={()=> {if(window.confirm('Yakin ingin diakhiri ?')){this.akhiriUjian();}}} style={posisikanan} className="btn btn-danger btn-sm"  data-dismiss="modal">
+                                    Akhiri Ujian
+                                </button>
                             </div>
                             </div>
                             {/* /.modal-content */}
@@ -155,4 +168,6 @@ export default class ProsesUjian extends Component {
         )
     }
 }
+
+export default ProsesUjian;
 
