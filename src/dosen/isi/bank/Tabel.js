@@ -102,7 +102,11 @@ componentDidMount(){
                           <tr key={bank_soal.id}>
                             <td>{bank_soal.bank_soal}</td>
                             <td>{bank_soal.matkul}</td>
-                            <td>Button</td>
+                            <td>
+                              <Link to="/dosen/soalbank/" className="btn btn-sm btn-primary">
+                                Daftar Soal
+                              </Link>
+                            </td>
                             <td>
                               <Link to=
                                 {

@@ -14,6 +14,7 @@ import TambahPaket from './isi/paket/Tambah';
 import UbahPaket from './isi/paket/Ubah';
 // Bank Soal
 import TabelBank from './isi/bank/Tabel';
+import TabelSoal from './isi/bank/TabelSoal';
 import TambahBank from './isi/bank/Tambah';
 import UbahBank from './isi/bank/Ubah';
 import Footer from './Footer';
@@ -54,6 +55,7 @@ function App() {
               <Route path="/dosen/ubahpaket" component={UbahPaket} />
 
               <Route path="/dosen/bank/" component={TabelBank} />
+              <Route path="/dosen/soalbank/" component={TabelSoal} />
               <Route path="/dosen/tambahbank" component={TambahBank} />
               <Route path="/dosen/ubahbank" component={UbahBank} />
             </Switch>
