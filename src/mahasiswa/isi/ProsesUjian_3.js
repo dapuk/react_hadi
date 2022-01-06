@@ -174,36 +174,36 @@ class ProsesUjian extends Component {
                         <div className="card-body">
                             <div className="row">
                                 <div className="col-12">
-                                Berikut ini yang merupakan framework dari HTML adalah...
+                                Berikut ini yang bukan framework dari Javascript adalah...
                                     <br />
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="radio_jawaban" value="Transmisi Sistem"/>
                                         <label className="form-check-label">A.</label>
-                                        Bootstrap
+                                        Vue
                                     </div>
 
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="radio_jawaban" value="Komunikasi Suara"/>
                                         <label className="form-check-label">B.</label>
-                                        Flask
+                                        Angular
                                     </div>
 
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="radio_jawaban" value="Sinkronasi"/>
                                         <label className="form-check-label">C.</label>
-                                        Flutter
+                                        Next
                                     </div>
 
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="radio_jawaban" value="Komunikasi Data"/>
                                         <label className="form-check-label">D.</label>
-                                        Laravel
+                                        Django
                                     </div>
 
                                     <div className="form-check">
                                         <input className="form-check-input" type="radio" name="radio_jawaban" value="Komunikasi Data"/>
                                         <label className="form-check-label">E.</label>
-                                        Codeigniter
+                                        Node.js
                                     </div>
                                 </div>
 
@@ -214,9 +214,9 @@ class ProsesUjian extends Component {
                         </div>
 
                         <div className="card-footer">
-                            {/* <button type="submit" className="btn btn-danger btn-sm" style={MarginR}>Sebelumnya</button> */}
+                            <button type="submit" className="btn btn-danger btn-sm" style={MarginR} onClick={() => this.props.history.goBack()}>Sebelumnya</button>
                             {/* <button type="submit" className="btn btn-warning btn-sm" style={MarginR}>Ragu-Ragu</button> */}
-                            <button type="submit" className="btn btn-success btn-sm" style={MarginR} onClick={() => this.props.history.push('/mahasiswa/prosesujian_2')}>Selanjutnya</button>
+                            <button type="submit" className="btn btn-success btn-sm" style={MarginR} onClick={() => this.props.history.push('/mahasiswa/prosesujian_4')}>Selanjutnya</button>
                             
                         </div>
                     </div>
