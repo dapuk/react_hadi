@@ -289,7 +289,7 @@ export default class Dasbor extends Component {
     <section className="content-header">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-md-4 col-sm-4 col-4">
+          <div className="col-md-6 col-sm-6 col-6">
             <a href="#" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
@@ -299,17 +299,7 @@ export default class Dasbor extends Component {
               </div>
             </a>
           </div>
-          <div className="col-md-4 col-sm-4 col-4">
-            <a href="#" style={{color: 'black'}}>
-              <div className="card">
-                <div className="card-body text-center">
-                  <i className="fas fa-4x fa-bullhorn" />
-                  <br /><small>Pengumuman</small>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div className="col-md-4 col-sm-4 col-4">
+          <div className="col-md-6 col-sm-6 col-6">
             <a href="#" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">

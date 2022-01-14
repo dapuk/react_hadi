@@ -91,7 +91,6 @@ componentDidMount(){
                       <table className="dataTable table table-bordered table-hover">
                       <thead>
                           <tr>
-                          <th>Kode Bank Soal</th>
                           <th>Matakuliah</th>
                           <th>Soal</th>
                           <th>Opsi</th>
@@ -100,7 +99,6 @@ componentDidMount(){
                       <tbody>
                       {this.state.bank_soal.map(bank_soal=>
                           <tr key={bank_soal.id}>
-                            <td>{bank_soal.bank_soal}</td>
                             <td>{bank_soal.matkul}</td>
                             <td>
                               <Link to="/dosen/soalbank/" className="btn btn-sm btn-primary">

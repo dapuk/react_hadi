@@ -29,7 +29,6 @@ class Ubah extends Component {
         if(routeState){
             this.state = {
                 id: routeState.id,
-                bank_soal: routeState.bank_soal,
                 matkul: routeState.matkul,
                 values: [],
                 count: 0,
@@ -156,15 +155,6 @@ nextClick = (e) => {
                               <h3 className="card-title">Bank Soal</h3>
                           </div>
                           <div className="card-body">
-                            <div className="form-group">
-                                <label>Bank Soal</label>
-                                <select className="form-control" name="bank_soal" defaultValue={this.state.bank_soal}  onChange={this.handleChange} required>
-                                <option selected disabled value=""> - Pilih Bank Soal - </option>
-                                <option value="101235">101235</option>
-                                <option value="123456">123456</option>
-                                </select>
-                            </div> 
-
                             <div className="form-group">
                                 <label>Matakuliah</label>
                                 <select className="form-control" name="matkul"  defaultValue={this.state.matkul}  onChange={this.handleChange}  required>

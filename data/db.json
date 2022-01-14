@@ -11,40 +11,117 @@
   ],
   "paket_soal": [
     {
-      "bank_soal": "123456",
-      "kode_seksi": "112345",
+      "kode_seksi": "1512600004",
       "durasi": "60",
       "id": 1,
-      "jenis_ujian": "UTS",
-      "jumlah_soal": "40",
-      "matkul": "Dasar Pemrograman",
-      "no_paket_ujian": "10101",
-      "waktu_mulai": "30/12/2021 09:09",
-      "waktu_selesai": "31/12/2021 12:56"
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "20",
+      "matkul": "Algoritma dan Pemrograman A",
+      "no_paket_ujian": "11600011",
+      "waktu_mulai": "31/07/2021 15:00",
+      "waktu_selesai": "31/07/2021 16:00"
     },
     {
-      "bank_soal": "123456",
-      "matkul": "Dasar Pemrograman",
-      "kode_seksi": "11111",
-      "jenis_ujian": "UAS",
-      "no_paket_ujian": "56451",
-      "waktu_mulai": "19/01/2022 00:00",
-      "waktu_selesai": "14/01/2022 00:00",
+      "kode_seksi": "1512600005",
       "durasi": "60",
-      "jumlah_soal": "40",
-      "id": 3
+      "id": 2,
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "20",
+      "matkul": "Algoritma dan Pemrograman B",
+      "no_paket_ujian": "11600012",
+      "waktu_mulai": "01/08/2021 15:00",
+      "waktu_selesai": "01/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600006",
+      "durasi": "60",
+      "id": 3,
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "20",
+      "matkul": "Algoritma dan Pemrograman C",
+      "no_paket_ujian": "11600013",
+      "waktu_mulai": "02/08/2021 15:00",
+      "waktu_selesai": "02/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600007",
+      "durasi": "60",
+      "id": 4,
+      "jenis_ujian": "UTS",
+      "jumlah_soal": "15",
+      "matkul": "Komunikasi Data A",
+      "no_paket_ujian": "11600021",
+      "waktu_mulai": "03/08/2021 15:00",
+      "waktu_selesai": "03/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600008",
+      "durasi": "60",
+      "id": 5,
+      "jenis_ujian": "UTS",
+      "jumlah_soal": "15",
+      "matkul": "Komunikasi Data B",
+      "no_paket_ujian": "11600022",
+      "waktu_mulai": "04/08/2021 15:00",
+      "waktu_selesai": "04/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600009",
+      "durasi": "60",
+      "id": 6,
+      "jenis_ujian": "UTS",
+      "jumlah_soal": "15",
+      "matkul": "Komunikasi Data C",
+      "no_paket_ujian": "11600023",
+      "waktu_mulai": "05/08/2021 15:00",
+      "waktu_selesai": "05/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600016",
+      "durasi": "60",
+      "id": 7,
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "30",
+      "matkul": "Interaksi Manusia dan Komputer A",
+      "no_paket_ujian": "11600031",
+      "waktu_mulai": "06/08/2021 15:00",
+      "waktu_selesai": "06/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600017",
+      "durasi": "60",
+      "id": 8,
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "30",
+      "matkul": "Interaksi Manusia dan Komputer B",
+      "no_paket_ujian": "11600032",
+      "waktu_mulai": "07/08/2021 15:00",
+      "waktu_selesai": "07/08/2021 16:00"
+    },
+    {
+      "kode_seksi": "1512600018",
+      "durasi": "60",
+      "id": 9,
+      "jenis_ujian": "UAS",
+      "jumlah_soal": "30",
+      "matkul": "Interaksi Manusia dan Komputer C",
+      "no_paket_ujian": "11600033",
+      "waktu_mulai": "08/08/2021 15:00",
+      "waktu_selesai": "08/08/2021 16:00"
     }
   ],
   "bank_soal": [
     {
       "id": 1,
-      "bank_soal": "123456",
-      "matkul": "Dasar Pemrograman"
+      "matkul": "Algoritma dan Pemrograman"
     },
     {
-      "bank_soal": "101235",
       "id": 2,
-      "matkul": "Kalkulus"
+      "matkul": "Komunikasi Data"
+    },
+    {
+      "id": 3,
+      "matkul": "Interaksi Manusia dan Komputer"
     }
   ],
   "profil_mahasiswa": [
@@ -64,6 +141,8 @@
       "id": 1,
       "nama": "Dosen",
       "nip": "001",
+      "nidk": "001",
+      "nidn": "001",
       "sandi": "123456",
       "telpon": "0856125441123"
     }

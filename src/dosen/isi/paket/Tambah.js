@@ -29,7 +29,6 @@ class Tambah extends Component {
 
         this.state = {
             id: '',
-            bank_soal: '',
             matkul: '',
             kode_seksi: '',
             jenis_ujian: '',
@@ -110,15 +109,6 @@ class Tambah extends Component {
                         </div>
                         <div className="card-body">
                                             <div className="form-group">
-                                                <label>Bank Soal</label>
-                                                <select className="form-control" name="bank_soal" defaultValue={this.state.bank_soal}  onChange={this.handleChange} required>
-                                                <option selected disabled value=""> - Pilih Bank Soal - </option>
-                                                <option value="101235">101235</option>
-                                                <option value="123456">123456</option>
-                                                </select>
-                                            </div> 
-
-                                            <div className="form-group">
                                                 <label>Matakuliah</label>
                                                 <select className="form-control" name="matkul"  defaultValue={this.state.matkul}  onChange={this.handleChange}  required>
                                                 <option selected disabled value=""> - Pilih Mata Kuliah - </option>
@@ -179,6 +169,214 @@ class Tambah extends Component {
                                             <div className="form-group">
                                                 <label>Jumlah Soal</label>
                                                 <input type="text" className="form-control" name="jumlah_soal"  value={this.state.jumlah_soal}  onChange={this.handleChange} />
+                                            </div>  
+
+                                            <div className="form-group">
+                                                <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-soal">
+                                                    Lihat Soal
+                                                </button>
+
+                                                <div className="modal fade" id="modal-soal">
+                                                <div className="modal-dialog modal-xl">
+                                                    <div className="modal-content">
+                                                    <div className="modal-header">
+                                                        <h4 className="modal-title">Daftar Soal</h4>
+                                                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+                                                    <div className="modal-body">
+                                                        <table className="dataTable table table-bordered table-hover">
+                                                            <thead>
+                                                                <tr>
+                                                                <th width="1%">No.</th>
+                                                                <th>Soal</th>
+                                                                <th width="10%">#</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                1
+                                                                </td>
+                                                                <td>
+                                                                <p>Berikut ini yang merupakan framework dari HTML adalah...</p>
+                                                                <ol type="A">
+                                                                <b><li>Bootstrap</li></b>
+                                                                    <li>Flask</li>
+                                                                    <li>Flutter</li>
+                                                                    <li>Laravel</li>
+                                                                    <li>Codeigniter</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                2
+                                                                </td>
+                                                                <td>
+                                                                <p>Bahasa yang digunakan untuk mengubah tampilan web adalah...</p>
+                                                                <ol type="A">
+                                                                <li>Java</li>
+                                                                <b><li>CSS</li></b>
+                                                                    <li>JavaScript</li>
+                                                                    <li>PHP</li>
+                                                                    <li>Phyton</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                3
+                                                                </td>
+                                                                <td>
+                                                                <p>Berikut ini yang bukan framework dari Javascript adalah...</p>
+                                                                <ol type="A">
+                                                                <li>Vue</li>
+                                                                    <li>Angular</li>
+                                                                    <li>Next</li>
+                                                                    <b><li>Django</li></b>
+                                                                    <li>Node.js</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                4
+                                                                </td>
+                                                                <td>
+                                                                <p>Kepanjangan dari HTML adalah...</p>
+                                                                <ol type="A">
+                                                                <li>Hipo Text Markup Language</li>
+                                                                    <li>Hiper Text Markup Language</li>
+                                                                    <b><li>Hyper Text Markup Language</li></b>
+                                                                    <li>Hyper Text Mobile Language</li>
+                                                                    <li>Hipo Text Mobile Language</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                5
+                                                                </td>
+                                                                <td>
+                                                                <p>Kepanjangan dari CSS adalah...</p>
+                                                                <ol type="A">
+                                                                <li>Cascading Super Sheet</li>
+                                                                <b><li>Cascading Style Sheet</li></b>
+                                                                    <li>Cascading Style Sheet</li>
+                                                                    <li>Cascading Style Show</li>
+                                                                    <li>Cascading Sheet Show</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                6
+                                                                </td>
+                                                                <td>
+                                                                <p>PHP adalah bahasa pemrograman web yang digunakan untuk...</p>
+                                                                <ol type="A">
+                                                                <li>Mengubah tampilan web</li>
+                                                                    <li>Mengubah tampilan web</li>
+                                                                    <li>Membuat halaman web</li>
+                                                                    <li>Mengelola versi web</li>
+                                                                    <b><li>Membuat web menjadi dinamis</li></b>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                7
+                                                                </td>
+                                                                <td>
+                                                                <p>Di bawah ini yang bukan merupakan tipe data primitif pada Javascript adalah...</p>
+                                                                <ol type="A">
+                                                                <b><li>Array</li></b>
+                                                                    <li>Number</li>
+                                                                    <li>String</li>
+                                                                    <li>Booelan</li>
+                                                                    <li>Null</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td>
+                                                                8
+                                                                </td>
+                                                                <td>
+                                                                <p>Di bawah ini yang merupakan aplikasi DBMS adalah...</p>
+                                                                <ol type="A">
+                                                                <li>Kubernetes</li>
+                                                                    <li>Docker</li>
+                                                                    <b><li>MySQL</li></b>
+                                                                    <li>Microsoft Azure</li>
+                                                                    <li>Amazon Web Services</li>
+                                                                </ol>
+                                                                </td>
+                                                                <td>
+                                                                <div>
+                                                                    <input type="checkbox" style={{ marginRight: "5px" }} />Pilih Soal
+                                                                </div>
+                                                                </td>
+                                                            </tr>
+
+                                                            
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                    {/* <div className="modal-footer justify-content-between">
+                                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                                                        <button type="button" className="btn btn-primary">Save changes</button>
+                                                    </div> */}
+                                                    </div>
+                                                    {/* /.modal-content */}
+                                                </div>
+                                                {/* /.modal-dialog */}
+                                                </div>
+                                                {/* /.modal */}
                                             </div>                
                                         </div>
                         <div className="card-footer">

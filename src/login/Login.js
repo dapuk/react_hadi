@@ -24,10 +24,12 @@ function Login() {
     return (
         <div>
             <body className="hold-transition login-page">
-            <div className="login-box">
-        <div className="login-logo">
-        <img src={logo} className="img-circle" style={{height: 100, width: 100}} /><br />
-        <a href="#"><b>E-TEST</b></a>
+            <div className="login-box" style={{ width: 520 }}>
+        <div className="login-logo" style={{ width: 500 }}>
+        <img src={logo} className="img-circle" style={{height: 230, width: 230, marginBottom: '10px'}} /><br />
+        <h4>Aplikasi Ujian Pilihan Ganda</h4>
+        <h4>Pendidikan Teknik Informatika dan Komputer</h4>
+        <a href="#"><b>(E-TEST)</b></a>
         </div>
         <div className="card">
         <div className="card-body login-card-body">

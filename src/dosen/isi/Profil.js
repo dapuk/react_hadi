@@ -24,6 +24,8 @@ class Profil extends Component {
           id: '',
           nama: '',
           nip: '',
+          nidn: '',
+          nidk: '',
           email: '',
           telpon:'',
           sandi: ''
@@ -42,6 +44,8 @@ class Profil extends Component {
                 telpon: res.data['telpon'],
                 data_nama: res.data['nama'],
                 data_nip: res.data['nip'],
+                data_nidn: res.data['nidn'],
+                data_nidk: res.data['nidk'],
                 data_email: res.data['email'],
                 data_telpon: res.data['telpon'],
                 sandiLama: res.data['sandi'],
@@ -90,6 +94,8 @@ class Profil extends Component {
                 telpon: this.state.telpon,
                 data_nama: this.state.nama,
                 data_nip: this.state.nip,
+                data_nidn: this.state.nidn,
+                data_nidk: this.state.nidk,
                 data_email: this.state.email,
                 data_angkatan: this.state.angkatan,
                 data_telpon: this.state.telpon,
@@ -188,6 +194,16 @@ class Profil extends Component {
                                                     </div>
 
                                                     <div className="form-group">
+                                                        <label>NIDK</label>
+                                                        <input type="text" className="form-control" name="nidk"  value={this.state.nidk}   disabled />
+                                                    </div>
+
+                                                    <div className="form-group">
+                                                        <label>NIDN</label>
+                                                        <input type="text" className="form-control" name="nidn"  value={this.state.nidn}   disabled />
+                                                    </div>
+
+                                                    <div className="form-group">
                                                         <label>Email</label>
                                                         <input type="text" className="form-control" name="email"  value={this.state.email}   disabled  />
                                                     </div>
@@ -280,6 +296,12 @@ class Profil extends Component {
                             </li>
                             <li className="list-group-item">
                                 <b>NIP</b> <a className="float-right">{this.state.data_nip}</a>
+                            </li>
+                            <li className="list-group-item">
+                                <b>NIDN</b> <a className="float-right">{this.state.data_nip}</a>
+                            </li>
+                            <li className="list-group-item">
+                                <b>NIDK</b> <a className="float-right">{this.state.data_nip}</a>
                             </li>
                             <li className="list-group-item">
                                 <b>Email</b> <a className="float-right">{this.state.data_email}</a>

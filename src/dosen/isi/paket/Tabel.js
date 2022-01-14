@@ -90,14 +90,12 @@ class Tabel extends Component {
                     <table className="dataTable table table-bordered table-hover">
                     <thead>
                         <tr>
-                        <th>Bank Soal</th>
                         <th>Mata Kuliah</th>
                         <th>Kode Seksi</th>
                         <th>Jenis Ujian</th>
                         <th>Nomor Paket Soal</th>
-                        <th>Waktu Mulai</th>
-                        <th>Waktu Berakhir</th>
-                        <th>Durasi</th>
+                        <th>Waktu Ujian</th>
+                        <th>Durasi Ujian</th>
                         <th>Jumlah Soal</th>
                         <th>Status</th>
                         <th>Opsi</th>
@@ -106,13 +104,11 @@ class Tabel extends Component {
                     <tbody>
                         {this.state.paket_soal.map(paket_soal=>
                           <tr key={paket_soal.id}>
-                            <td>{paket_soal.bank_soal}</td>
                             <td>{paket_soal.matkul}</td>
                             <td>{paket_soal.kode_seksi}</td>
                             <td>{paket_soal.jenis_ujian}</td>
                             <td>{paket_soal.no_paket_ujian}</td>
                             <td>{paket_soal.waktu_mulai}</td>
-                            <td>{paket_soal.waktu_selesai}</td>
                             <td>{paket_soal.durasi} Menit</td>
                             <td>
                                 <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-soal">

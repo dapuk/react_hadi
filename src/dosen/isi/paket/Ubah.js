@@ -41,7 +41,6 @@ class Ubah extends Component {
         if(routeState){
             this.state = {
                 id: routeState.id,
-                bank_soal: routeState.bank_soal,
                 matkul: routeState.matkul,
                 jenis_ujian: routeState.jenis_ujian,
                 no_paket_ujian: routeState.no_paket_ujian,
@@ -62,7 +61,6 @@ class Ubah extends Component {
     ubahMatkul = async (idPaket) => {
         const data = qs.stringify({
             id:idPaket,
-            bank_soal: this.state.bank_soal,
             matkul: this.state.matkul,
             jenis_ujian: this.state.jenis_ujian,
             no_paket_ujian: this.state.no_paket_ujian,
@@ -76,7 +74,6 @@ class Ubah extends Component {
         .then( json => {
             this.setState({
                 id: this.state.id,
-                bank_soal: this.state.bank_soal,
                 matkul: this.state.matkul,
                 jenis_ujian: this.state.jenis_ujian,
                 no_paket_ujian: this.state.no_paket_ujian,
@@ -122,15 +119,6 @@ class Ubah extends Component {
                                             <h3 className="card-title">Mata Kuliah</h3>
                                         </div>
                                         <div className="card-body">
-                                            <div className="form-group">
-                                                <label>Bank Soal</label>
-                                                <select className="form-control" name="bank_soal" defaultValue={this.state.bank_soal}  onChange={this.handleChange} required>
-                                                <option selected disabled value="-"> - Pilih Bank Soal - </option>
-                                                <option value="101235">101235</option>
-                                                <option value="123456">123456</option>
-                                                </select>
-                                            </div> 
-
                                             <div className="form-group">
                                                 <label>Matakuliah</label>
                                                 <select className="form-control" name="matkul"  defaultValue={this.state.matkul}  onChange={this.handleChange}  required>

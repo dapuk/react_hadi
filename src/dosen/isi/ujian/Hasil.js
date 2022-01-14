@@ -52,12 +52,148 @@ export default class Tabel extends Component {
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>112345</td>
-                        <td>Dasar Pemrograman</td>
+                        <td>1512600004</td>
+                        <td>Algoritma dan Pemrograman A</td>
                         <td>UAS</td>
-                        <td>11411</td>
+                        <td>11600011</td>
                         <td>
                           Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>2</td>
+                        <td>1512600005</td>
+                        <td>Algoritma dan Pemrograman B</td>
+                        <td>UAS</td>
+                        <td>11600012</td>
+                        <td>
+                          Belum Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>3</td>
+                        <td>1512600006</td>
+                        <td>Algoritma dan Pemrograman C</td>
+                        <td>UAS</td>
+                        <td>11600013</td>
+                        <td>
+                          Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>4</td>
+                        <td>1512600007</td>
+                        <td>Komunikasi Data A</td>
+                        <td>UTS</td>
+                        <td>11600021</td>
+                        <td>
+                          Belum Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>5</td>
+                        <td>1512600008</td>
+                        <td>Komunikasi Data B</td>
+                        <td>UTS</td>
+                        <td>11600022</td>
+                        <td>
+                          Belum Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>6</td>
+                        <td>1512600009</td>
+                        <td>Komunikasi Data C</td>
+                        <td>UTS</td>
+                        <td>11600023</td>
+                        <td>
+                          Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>7</td>
+                        <td>1512600016</td>
+                        <td>Interaksi Manusia dan Komputer A</td>
+                        <td>UAS</td>
+                        <td>11600031</td>
+                        <td>
+                          Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>8</td>
+                        <td>1512600017</td>
+                        <td>Interaksi Manusia dan Komputer B</td>
+                        <td>UAS</td>
+                        <td>11600032</td>
+                        <td>
+                          Selesai
+                        </td>
+                        <td>
+                            <button>Lihat Hasil</button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>9</td>
+                        <td>1512600018</td>
+                        <td>Interaksi Manusia dan Komputer C</td>
+                        <td>UAS</td>
+                        <td>11600033</td>
+                        <td>
+                          Belum Selesai
                         </td>
                         <td>
                             <button>Lihat Hasil</button>

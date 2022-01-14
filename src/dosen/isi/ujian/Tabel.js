@@ -48,20 +48,176 @@ export default class Tabel extends Component {
                         <th>Matakuliah</th>
                         <th>Jenis Ujian</th>
                         <th>Waktu</th>
+                        <th>Durasi Waktu Ujian</th>
                         <th>Status</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                         <td>1</td>
-                        <td>11411</td>
-                        <td>112345</td>
-                        <td>Dasar Pemrograman</td>
+                        <td>11600011</td>
+                        <td>1512600004</td>
+                        <td>Algoritma dan Pemrograman A</td>
                         <td>
                             UAS 
                         </td>
                         <td>                  
-                            2021/07/31 17:26:52                     
+                            31/07/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Selesai
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>2</td>
+                        <td>11600012</td>
+                        <td>1512600005</td>
+                        <td>Algoritma dan Pemrograman B</td>
+                        <td>
+                            UAS 
+                        </td>
+                        <td>                  
+                            01/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Sedang Berlangsung
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>3</td>
+                        <td>11600013</td>
+                        <td>1512600006</td>
+                        <td>Algoritma dan Pemrograman C</td>
+                        <td>
+                            UAS 
+                        </td>
+                        <td>                  
+                            02/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Selesai
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>4</td>
+                        <td>11600021</td>
+                        <td>1512600007</td>
+                        <td>Komunikasi Data A</td>
+                        <td>
+                            UTS 
+                        </td>
+                        <td>                  
+                            03/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Sedang Berlangsung
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>5</td>
+                        <td>11600022</td>
+                        <td>1512600008</td>
+                        <td>Komunikasi Data B</td>
+                        <td>
+                            UTS 
+                        </td>
+                        <td>                  
+                            04/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Sedang Berlangsung
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>6</td>
+                        <td>11600023</td>
+                        <td>1512600009</td>
+                        <td>Komunikasi Data C</td>
+                        <td>
+                            UTS 
+                        </td>
+                        <td>                  
+                            05/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Selesai
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>7</td>
+                        <td>11600031</td>
+                        <td>1512600016</td>
+                        <td>Interaksi Manusia dan Komputer A</td>
+                        <td>
+                            UAS 
+                        </td>
+                        <td>                  
+                            06/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Selesai
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>8</td>
+                        <td>11600032</td>
+                        <td>1512600017</td>
+                        <td>Interaksi Manusia dan Komputer B</td>
+                        <td>
+                            UAS 
+                        </td>
+                        <td>                  
+                            07/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
+                        </td>
+                        <td>
+                            Selesai
+                        </td>
+                        </tr>
+
+                        <tr>
+                        <td>9</td>
+                        <td>11600033</td>
+                        <td>1512600018</td>
+                        <td>Interaksi Manusia dan Komputer C</td>
+                        <td>
+                            UAS 
+                        </td>
+                        <td>                  
+                            08/08/2021 15:00                     
+                        </td>
+                        <td>                  
+                            60 Menit                     
                         </td>
                         <td>
                             Sedang Berlangsung

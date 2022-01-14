@@ -76,7 +76,7 @@ class ProsesUjian extends Component {
                 <div className="container-fluid">
                     <center><b>
                         UJIAN AKHIR SEMESTER <br />
-                        KOMUNIKASI DATA
+                        PEMROGRAMAN WEB
                         </b>
                     </center>
                 </div>{/* /.container-fluid */}

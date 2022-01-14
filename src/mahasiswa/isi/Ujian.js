@@ -42,7 +42,7 @@ export default class Ujian extends Component {
                                 <tbody>
                                 <tr>
                                     <td>1</td>
-                                    <td>Dasar Pemrograman</td>
+                                    <td>Pemrograman Web</td>
                                     <td>UTS</td>
                                     <td>
                                     01, August 2021 - 01:46:46                    </td>
@@ -60,7 +60,7 @@ export default class Ujian extends Component {
 
                                 <tr>
                                     <td>1</td>
-                                    <td>Dasar Pemrograman</td>
+                                    <td>Pemrograman Web</td>
                                     <td>UTS</td>
                                     <td>
                                     01, August 2021 - 01:46:46                    </td>

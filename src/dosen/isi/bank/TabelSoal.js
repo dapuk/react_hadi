@@ -92,7 +92,10 @@ componentDidMount(){
                       <thead>
                           <tr>
                           <th>Soal</th>
-                          <th>Jawaban</th>
+                          <th>Kunci Jawaban</th>
+                          <th>Pilihan Jawaban</th>
+                          <th>Jumlah Soal Digunakan</th>
+                          <th>Jumlah Terjawab Benar</th>
                           <th>Status</th>
                           <th>Opsi</th>
                           </tr>
@@ -103,6 +106,17 @@ componentDidMount(){
                                 Berikut ini yang merupakan framework dari HTML adalah...
                               </td>
                               <td>Bootstrap</td>
+                              <td>
+                                <ol type="A">
+                                <b><li>Bootstrap</li></b>
+                                  <li>Flask</li>
+                                  <li>Flutter</li>
+                                  <li>Laravel</li>
+                                  <li>Codeigniter</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
                               <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
@@ -124,6 +138,17 @@ componentDidMount(){
                               </td>
                               <td>CSS</td>
                               <td>
+                                <ol type="A">
+                                <li>Java</li>
+                                <b><li>CSS</li></b>
+                                  <li>JavaScript</li>
+                                  <li>PHP</li>
+                                  <li>Phyton</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
@@ -143,6 +168,17 @@ componentDidMount(){
                                 Berikut ini yang bukan framework dari Javascript adalah...
                               </td>
                               <td>Django</td>
+                              <td>
+                                <ol type="A">
+                                <li>Vue</li>
+                                  <li>Angular</li>
+                                  <li>Next</li>
+                                  <b><li>Django</li></b>
+                                  <li>Node.js</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
                               <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
@@ -164,6 +200,17 @@ componentDidMount(){
                               </td>
                               <td>Hyper Text Markup Language</td>
                               <td>
+                                <ol type="A">
+                                <li>Hipo Text Markup Language</li>
+                                  <li>Hiper Text Markup Language</li>
+                                  <b><li>Hyper Text Markup Language</li></b>
+                                  <li>Hyper Text Mobile Language</li>
+                                  <li>Hipo Text Mobile Language</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
@@ -183,6 +230,17 @@ componentDidMount(){
                               Kepanjangan dari CSS adalah...
                               </td>
                               <td>Cascading Style Sheet</td>
+                              <td>
+                                <ol type="A">
+                                <li>Cascading Super Sheet</li>
+                                <b><li>Cascading Style Sheet</li></b>
+                                  <li>Cascading Style Sheet</li>
+                                  <li>Cascading Style Show</li>
+                                  <li>Cascading Sheet Show</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
                               <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
@@ -204,6 +262,17 @@ componentDidMount(){
                               </td>
                               <td>Membuat web menjadi dinamis</td>
                               <td>
+                                <ol type="A">
+                                <li>Mengubah tampilan web</li>
+                                  <li>Mengubah tampilan web</li>
+                                  <li>Membuat halaman web</li>
+                                  <li>Mengelola versi web</li>
+                                  <b><li>Membuat web menjadi dinamis</li></b>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
@@ -224,6 +293,17 @@ componentDidMount(){
                               </td>
                               <td>Array</td>
                               <td>
+                                <ol type="A">
+                                <b><li>Array</li></b>
+                                  <li>Number</li>
+                                  <li>String</li>
+                                  <li>Booelan</li>
+                                  <li>Null</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
+                              <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
@@ -243,6 +323,17 @@ componentDidMount(){
                               Di bawah ini yang merupakan aplikasi DBMS adalah...
                               </td>
                               <td>MySQL</td>
+                              <td>
+                                <ol type="A">
+                                <li>Kubernetes</li>
+                                  <li>Docker</li>
+                                  <b><li>MySQL</li></b>
+                                  <li>Microsoft Azure</li>
+                                  <li>Amazon Web Services</li>
+                                </ol>
+                              </td>
+                              <td>1</td>
+                              <td>1</td>
                               <td>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
                                 <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
