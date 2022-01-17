@@ -11,103 +11,67 @@
   ],
   "paket_soal": [
     {
-      "kode_seksi": "1512600004",
-      "durasi": "60",
       "id": 1,
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman A",
-      "no_paket_ujian": "11600011",
-      "waktu_mulai": "31/07/2021 15:00",
-      "waktu_selesai": "31/07/2021 16:00"
+      "no_paket_ujian": "11600011, 11600012, 11600013"
     },
     {
-      "kode_seksi": "1512600005",
-      "durasi": "60",
       "id": 2,
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman B",
-      "no_paket_ujian": "11600012",
-      "waktu_mulai": "01/08/2021 15:00",
-      "waktu_selesai": "01/08/2021 16:00"
+      "no_paket_ujian": "11600011, 11600012, 11600013"
     },
     {
-      "kode_seksi": "1512600006",
-      "durasi": "60",
       "id": 3,
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman C",
-      "no_paket_ujian": "11600013",
-      "waktu_mulai": "02/08/2021 15:00",
-      "waktu_selesai": "02/08/2021 16:00"
+      "no_paket_ujian": "11600011, 11600012, 11600013"
     },
     {
-      "kode_seksi": "1512600007",
-      "durasi": "60",
       "id": 4,
       "jenis_ujian": "UTS",
       "jumlah_soal": "15",
       "matkul": "Komunikasi Data A",
-      "no_paket_ujian": "11600021",
-      "waktu_mulai": "03/08/2021 15:00",
-      "waktu_selesai": "03/08/2021 16:00"
+      "no_paket_ujian": "11600021"
     },
     {
-      "kode_seksi": "1512600008",
-      "durasi": "60",
       "id": 5,
       "jenis_ujian": "UTS",
       "jumlah_soal": "15",
       "matkul": "Komunikasi Data B",
-      "no_paket_ujian": "11600022",
-      "waktu_mulai": "04/08/2021 15:00",
-      "waktu_selesai": "04/08/2021 16:00"
+      "no_paket_ujian": "11600022"
     },
     {
-      "kode_seksi": "1512600009",
-      "durasi": "60",
       "id": 6,
       "jenis_ujian": "UTS",
       "jumlah_soal": "15",
       "matkul": "Komunikasi Data C",
-      "no_paket_ujian": "11600023",
-      "waktu_mulai": "05/08/2021 15:00",
-      "waktu_selesai": "05/08/2021 16:00"
+      "no_paket_ujian": "11600023"
     },
     {
-      "kode_seksi": "1512600016",
-      "durasi": "60",
       "id": 7,
       "jenis_ujian": "UAS",
       "jumlah_soal": "30",
       "matkul": "Interaksi Manusia dan Komputer A",
-      "no_paket_ujian": "11600031",
-      "waktu_mulai": "06/08/2021 15:00",
-      "waktu_selesai": "06/08/2021 16:00"
+      "no_paket_ujian": "11600031"
     },
     {
-      "kode_seksi": "1512600017",
-      "durasi": "60",
       "id": 8,
       "jenis_ujian": "UAS",
       "jumlah_soal": "30",
       "matkul": "Interaksi Manusia dan Komputer B",
-      "no_paket_ujian": "11600032",
-      "waktu_mulai": "07/08/2021 15:00",
-      "waktu_selesai": "07/08/2021 16:00"
+      "no_paket_ujian": "11600032"
     },
     {
-      "kode_seksi": "1512600018",
-      "durasi": "60",
       "id": 9,
       "jenis_ujian": "UAS",
       "jumlah_soal": "30",
       "matkul": "Interaksi Manusia dan Komputer C",
-      "no_paket_ujian": "11600033",
-      "waktu_mulai": "08/08/2021 15:00",
-      "waktu_selesai": "08/08/2021 16:00"
+      "no_paket_ujian": "11600033"
     }
   ],
   "bank_soal": [
@@ -127,24 +91,24 @@
   "profil_mahasiswa": [
     {
       "angkatan": "2017",
-      "email": "Hadi@hadi.com",
+      "email": "mhadi.nasa@gmail.com",
       "id": 1,
-      "nama": "Hadi, S.Pd",
-      "nim": "001",
+      "nama": "Muhammad Hadiyatullah",
+      "nim": "1512617005",
       "sandi": "123456",
-      "telpon": "0856124596325"
+      "telpon": "087780997223"
     }
   ],
   "profil_dosen": [
     {
-      "email": "email@dosen.com",
+      "email": "hadiyatullah@unj.ac.id",
       "id": 1,
-      "nama": "Dosen",
-      "nip": "001",
-      "nidk": "001",
-      "nidn": "001",
+      "nama": "Hadiyatullah, S.Pd, M.T",
+      "nip": "189123456789101112",
+      "nidk": "0034567891",
+      "nidn": "-",
       "sandi": "123456",
-      "telpon": "0856125441123"
+      "telpon": "-"
     }
   ]
 }

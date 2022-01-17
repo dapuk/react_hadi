@@ -1,4 +1,5 @@
 import React, { useState, Component } from 'react';
+import {NavLink} from 'react-router-dom'
 import { render } from 'react-dom';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
@@ -7,6 +8,7 @@ import startOfWeek from 'date-fns/startOfWeek';
 import getDay from 'date-fns/getDay';
 import "react-big-calendar/lib/css/react-big-calendar.css"
 import DatePicker from 'react-datepicker';
+import moment, {now} from 'moment';
 
 // import Highcharts from 'highcharts';
 // import drilldown from 'highcharts/modules/drilldown.js';
@@ -17,6 +19,8 @@ import DatePicker from 'react-datepicker';
 const locales = {
   "id-ID": require("date-fns/locale/en-US")
 }
+
+const year = "2022"
 
 const localizer = dateFnsLocalizer({
   format,
@@ -290,24 +294,24 @@ export default class Dasbor extends Component {
       <div className="container-fluid">
         <div className="row">
           <div className="col-md-6 col-sm-6 col-6">
-            <a href="#" style={{color: 'black'}}>
+          <NavLink exact to="/dosen/mahasiswa" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
                   <i className="fas fa-4x fa-users" />
                   <br /><small>Mahasiswa</small>
                 </div>
               </div>
-            </a>
+            </NavLink>
           </div>
           <div className="col-md-6 col-sm-6 col-6">
-            <a href="#" style={{color: 'black'}}>
+            <NavLink exact to="/dosen/ujian" style={{color: 'black'}}>
               <div className="card">
                 <div className="card-body text-center">
                   <i className="fas fa-4x fa-edit" />
                   <br /><small>Ujian</small>
                 </div>
               </div>
-            </a>
+            </NavLink>
           </div>
         </div>
       
@@ -435,11 +439,18 @@ export default class Dasbor extends Component {
                     <Calendar 
                       localizer={localizer} 
                       events={events} 
-                      startAccessor="start" 
-                      endAccessor="end" 
+                      startAccessor="start"
+                      endAccessor="end"
+                      defaultView='agenda'
                       style={{
                        height: 700,
                        margin: "50px" 
+                      }}
+                      date={new Date(moment(year).format("Y"))}
+                      onNavigate={(year) => {
+                          this.setState({
+                            year,
+                          });
                       }}
                     />
                   </div>

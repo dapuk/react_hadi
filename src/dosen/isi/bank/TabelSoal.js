@@ -118,8 +118,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -149,8 +149,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -180,8 +180,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -211,8 +211,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -242,8 +242,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -273,8 +273,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -304,8 +304,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
@@ -335,8 +335,8 @@ componentDidMount(){
                               <td>1</td>
                               <td>1</td>
                               <td>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
-                                <button  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
+                                <button className="btn btn-sm btn-default"  onClick={()=> {if(window.confirm('Apakah anda yakin akan draft soal ? Soal yang telah didraftkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Didraft!") };}} style={{ marginRight: "5px" }}>Draft</button>
+                                <button className="btn btn-sm btn-success"  onClick={()=> {if(window.confirm('Apakah anda yakin akan menerbitkan soal ? Soal yang telah diterbitkan tidak dapat diubah kembali!')){ alert("Soal Berhasil Diterbit!") };}}>Terbit</button>
                               </td>
                               <td>
                                 <button className="btn btn-sm btn-warning" style={MarginFontAwe}>

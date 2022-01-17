@@ -30,12 +30,8 @@ class Tambah extends Component {
         this.state = {
             id: '',
             matkul: '',
-            kode_seksi: '',
             jenis_ujian: '',
             no_paket_ujian: '',
-            waktu_mulai: '',
-            waktu_selesai: '',
-            durasi: '',
             jumlah_soal: '',
         }
     }
@@ -61,19 +57,19 @@ class Tambah extends Component {
         // ));
 
         api.post('/paket_soal', {
-            bank_soal: this.state.bank_soal,
             matkul: this.state.matkul,
-            kode_seksi: this.state.kode_seksi,
             jenis_ujian: this.state.jenis_ujian,
             no_paket_ujian: this.state.no_paket_ujian,
-            waktu_mulai: this.state.waktu_mulai,
-            waktu_selesai: this.state.waktu_selesai,
-            durasi: this.state.durasi,
             jumlah_soal: this.state.jumlah_soal
         }).then( json => {
             alert('Data Paket Soal berhasil ditambah!')
             this.props.history.push('/dosen/paket')
         })
+    }
+
+    simpanTambahDaftarSoal = (e) => {
+        alert('Daftar Soal Berhasil Ditambah!')
+        this.props.history.push('/dosen/tambahpaket')
     }
 
     render() {
@@ -112,15 +108,16 @@ class Tambah extends Component {
                                                 <label>Matakuliah</label>
                                                 <select className="form-control" name="matkul"  defaultValue={this.state.matkul}  onChange={this.handleChange}  required>
                                                 <option selected disabled value=""> - Pilih Mata Kuliah - </option>
-                                                <option value="Dasar Pemrograman">Dasar Pemrograman</option>
-                                                <option value="Bahasa Inggris">Bahasa Inggris</option>
+                                                <option value="Algortima Pemrograman">Algortima Pemrograman</option>
+                                                <option value="Komunikasi Data">Komunikasi Data</option>
+                                                <option value="Interaksi Manusia dan Komputer">Interaksi Manusia dan Komputer</option>
                                                 </select>
                                             </div> 
 
                                             <div className="form-group">
-                                                <label>Kode Seksi</label>
-                                                <input type="text" className="form-control" name="kode_seksi" value={this.state.kode_seksi}  onChange={this.handleChange}  />
-                                            </div>  
+                                                <label>Nomor Paket Soal</label>
+                                                <input type="text" className="form-control" name="no_paket_ujian" value={this.state.no_paket_ujian}  onChange={this.handleChange}  />
+                                            </div>   
 
                                             <div className="form-group">
                                                 <label>Jenis Ujian</label>
@@ -129,42 +126,7 @@ class Tambah extends Component {
                                                 <option value="UTS">UTS</option>
                                                 <option value="UAS">UAS</option>
                                                 </select>
-                                            </div>        
-
-                                            <div className="form-group">
-                                                <label>Nomor Paket Soal</label>
-                                                <input type="text" className="form-control" name="no_paket_ujian" value={this.state.no_paket_ujian}  onChange={this.handleChange}  />
-                                            </div>   
-
-                                            <div className="form-group">
-                                                <label>Waktu Pelaksanaan</label>
-                                                <Datetime 
-                                                    clearable
-                                                    value={this.state.waktu_mulai}
-                                                    dateFormat="DD/MM/YYYY"
-                                                    timeFormat="HH:mm"
-                                                    ampm={false}
-                                                    name="waktu_mulai" 
-                                                    onChange={(date) => { this.props.onDateChange && this.props.onDateChange(date);this.setState({ waktu_mulai: Moment(date).format('DD/MM/YYYY HH:mm') }); }}
-                                                />
-                                            </div> 
-
-                                            <div className="form-group">
-                                                <label>Waktu Berakhir</label>
-                                                <Datetime 
-                                                    value={this.state.waktu_selesai}
-                                                    dateFormat="DD/MM/YYYY"
-                                                    timeFormat="HH:mm"
-                                                    locale= 'id, ID'
-                                                    name="waktu_selesai" 
-                                                    onChange={(date) => { this.props.onDateChange && this.props.onDateChange(date);this.setState({ waktu_selesai: Moment(date).format('DD/MM/YYYY HH:mm') }); }}
-                                                />
-                                            </div>
-
-                                            <div className="form-group">
-                                                <label>Durasi Pelaksanaan (Menit)</label>
-                                                <input type="text" className="form-control" name="durasi"  value={this.state.durasi}  onChange={this.handleChange} />
-                                            </div> 
+                                            </div>     
 
                                             <div className="form-group">
                                                 <label>Jumlah Soal</label>
@@ -173,7 +135,8 @@ class Tambah extends Component {
 
                                             <div className="form-group">
                                                 <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-soal">
-                                                    Lihat Soal
+                                                    <i className='fa fa-plus' style={{marginRight: "5px"}}/>
+                                                    Tambah Soal
                                                 </button>
 
                                                 <div className="modal fade" id="modal-soal">
@@ -367,10 +330,11 @@ class Tambah extends Component {
                                                             </tbody>
                                                         </table>
                                                     </div>
-                                                    {/* <div className="modal-footer justify-content-between">
-                                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                                        <button type="button" className="btn btn-primary">Save changes</button>
-                                                    </div> */}
+                                                    <div className="modal-footer justify-content-between">
+                                                        <button type="button"  onClick={()=> {this.simpanTambahDaftarSoal()}} className="btn btn-success btn-sm"  data-dismiss="modal">
+                                                                    Simpan
+                                                        </button>
+                                                    </div>
                                                     </div>
                                                     {/* /.modal-content */}
                                                 </div>

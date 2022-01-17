@@ -119,7 +119,7 @@ componentDidMount(){
                                 } 
                                 >
                                   <button className="btn btn-sm btn-warning" style={MarginFontAwe}>
-                                    <i className="fas fa-edit" /> Ubah
+                                    <i className="fas fa-edit" /> Tambah
                                   </button>
                               </Link>
 

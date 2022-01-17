@@ -160,10 +160,9 @@ nextClick = (e) => {
                                 <label>Matakuliah</label>
                                 <select className="form-control" name="matkul"  defaultValue={this.state.matkul}  onChange={this.handleChange}  required>
                                 <option selected disabled value=""> - Pilih Mata Kuliah - </option>
-                                <option value="Dasar Pemrograman">Dasar Pemrograman</option>
-                                <option value="Bahasa Inggris">Bahasa Inggris</option>
-                                <option value="Logika Algoritma">Logika Algoritma</option>
-                                <option value="Kalkulus">Kalkulus</option>
+                                <option value="Algoritma Pemrograman">Algoritma Pemrograman</option>
+                                <option value="Komunikasi Data">Komunikasi Data</option>
+                                <option value="Interaksi Manusia dan Komputer">Interaksi Manusia dan Komputer</option>
                                 </select>
                             </div> 
                           </div>
@@ -183,9 +182,8 @@ nextClick = (e) => {
                         </div>
                         <div className="card-body">
                             <div className="form-group">
-                                Soal No <input type="text" width="3px" value={this.state.soal} />
-                                <br />
-                                <br />
+                                {/* Soal No <input type="text" width="3px" value={this.state.soal} /> */}
+                                
                                 <textarea id="summernote" defaultValue={""} />
                                 <input type="file"></input>
                             </div>

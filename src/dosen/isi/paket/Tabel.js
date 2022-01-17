@@ -50,6 +50,11 @@ class Tabel extends Component {
         })
     }
 
+    simpanDaftarSoal = (e) => {
+      alert('Daftar Soal Berhasil Ditambah!')
+      this.props.history.push('/dosen/paket')
+  }
+
     render() {
         return (
         <div>
@@ -91,11 +96,8 @@ class Tabel extends Component {
                     <thead>
                         <tr>
                         <th>Mata Kuliah</th>
-                        <th>Kode Seksi</th>
                         <th>Jenis Ujian</th>
                         <th>Nomor Paket Soal</th>
-                        <th>Waktu Ujian</th>
-                        <th>Durasi Ujian</th>
                         <th>Jumlah Soal</th>
                         <th>Status</th>
                         <th>Opsi</th>
@@ -105,11 +107,8 @@ class Tabel extends Component {
                         {this.state.paket_soal.map(paket_soal=>
                           <tr key={paket_soal.id}>
                             <td>{paket_soal.matkul}</td>
-                            <td>{paket_soal.kode_seksi}</td>
                             <td>{paket_soal.jenis_ujian}</td>
                             <td>{paket_soal.no_paket_ujian}</td>
-                            <td>{paket_soal.waktu_mulai}</td>
-                            <td>{paket_soal.durasi} Menit</td>
                             <td>
                                 <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-soal">
                                     Lihat {paket_soal.jumlah_soal}  Soal
@@ -306,10 +305,11 @@ class Tabel extends Component {
                                             </tbody>
                                           </table>
                                       </div>
-                                      {/* <div className="modal-footer justify-content-between">
-                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" className="btn btn-primary">Save changes</button>
-                                      </div> */}
+                                      <div className="modal-footer justify-content-between">
+                                          <button type="button"  onClick={()=> {this.simpanDaftarSoal()}} className="btn btn-success btn-sm"  data-dismiss="modal">
+                                                      Simpan
+                                          </button>
+                                      </div>
                                     </div>
                                     {/* /.modal-content */}
                                   </div>
@@ -328,14 +328,9 @@ class Tabel extends Component {
                                     pathname: '/dosen/ubahpaket',
                                     state: {
                                       id: paket_soal.id,
-                                      bank_soal: paket_soal.bank_soal,
                                       matkul: paket_soal.matkul,
-                                      kode_seksi: paket_soal.kode_seksi,
                                       jenis_ujian: paket_soal.jenis_ujian,
                                       no_paket_ujian: paket_soal.no_paket_ujian,
-                                      waktu_mulai: paket_soal.waktu_mulai,
-                                      waktu_selesai: paket_soal.waktu_selesai,
-                                      durasi: paket_soal.durasi,
                                       jumlah_soal: paket_soal.jumlah_soal,
                                     }
                                   }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
-import user from '../user.png'
+import user from '../HADI_NEW.jpg'
 
 function Menu() {
   let history = useHistory();
@@ -62,7 +62,13 @@ function Menu() {
               <li className="nav-item">
                 <NavLink exact to="/mahasiswa/ujian"  activeClassName="nav-link active" className="nav-link">
                   <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
-                  <p> Ujian</p>
+                  <p>Daftar Ujian</p>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink exact to="/mahasiswa/hasilujian"  activeClassName="nav-link active" className="nav-link">
+                  <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
+                  <p>Hasil Ujian</p>
                 </NavLink>
               </li>
               <li className="nav-item">

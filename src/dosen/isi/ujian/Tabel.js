@@ -32,9 +32,9 @@ export default class Tabel extends Component {
                 <div className="card-header">
                     <h3 className="card-title">Data Soal Ujian</h3>
                     <div className="card-tools">
-                        {/* <Link to="/dosen/tambahujian/" className="btn btn-sm btn-primary">
+                        <Link to="/dosen/tambahujian/" className="btn btn-sm btn-primary">
                             <i className="fas fa-plus" /> Tambah Ujian
-                        </Link> */}
+                        </Link>
                     </div>
                 </div>
                 {/* /.card-header */}
@@ -45,11 +45,14 @@ export default class Tabel extends Component {
                         <th>#</th>
                         <th>Paket Soal</th>
                         <th>Kode Seksi</th>
+                        <th>Semester</th>
                         <th>Matakuliah</th>
                         <th>Jenis Ujian</th>
                         <th>Waktu</th>
                         <th>Durasi Waktu Ujian</th>
                         <th>Status</th>
+                        <th>Hasil Ujian</th>
+                        <th>Ekspor</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -57,6 +60,7 @@ export default class Tabel extends Component {
                         <td>1</td>
                         <td>11600011</td>
                         <td>1512600004</td>
+                        <td>115</td>
                         <td>Algoritma dan Pemrograman A</td>
                         <td>
                             UAS 
@@ -70,12 +74,21 @@ export default class Tabel extends Component {
                         <td>
                             Selesai
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>2</td>
                         <td>11600012</td>
                         <td>1512600005</td>
+                        <td>115</td>
                         <td>Algoritma dan Pemrograman B</td>
                         <td>
                             UAS 
@@ -89,12 +102,21 @@ export default class Tabel extends Component {
                         <td>
                             Sedang Berlangsung
                         </td>
+                        <td>
+                            <button type="button" className="btn btn-success btn-sm disabled" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                                </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>3</td>
                         <td>11600013</td>
                         <td>1512600006</td>
+                        <td>115</td>
                         <td>Algoritma dan Pemrograman C</td>
                         <td>
                             UAS 
@@ -108,12 +130,21 @@ export default class Tabel extends Component {
                         <td>
                             Selesai
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>4</td>
                         <td>11600021</td>
                         <td>1512600007</td>
+                        <td>115</td>
                         <td>Komunikasi Data A</td>
                         <td>
                             UTS 
@@ -127,12 +158,21 @@ export default class Tabel extends Component {
                         <td>
                             Sedang Berlangsung
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm disabled" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                                </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>5</td>
                         <td>11600022</td>
                         <td>1512600008</td>
+                        <td>115</td>
                         <td>Komunikasi Data B</td>
                         <td>
                             UTS 
@@ -146,12 +186,21 @@ export default class Tabel extends Component {
                         <td>
                             Sedang Berlangsung
                         </td>
+                        <td>
+                                <button type="button" className="btn btn-success btn-sm disabled" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                                </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>6</td>
                         <td>11600023</td>
                         <td>1512600009</td>
+                        <td>115</td>
                         <td>Komunikasi Data C</td>
                         <td>
                             UTS 
@@ -165,12 +214,21 @@ export default class Tabel extends Component {
                         <td>
                             Selesai
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>7</td>
                         <td>11600031</td>
                         <td>1512600016</td>
+                        <td>115</td>
                         <td>Interaksi Manusia dan Komputer A</td>
                         <td>
                             UAS 
@@ -184,12 +242,21 @@ export default class Tabel extends Component {
                         <td>
                             Selesai
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>8</td>
                         <td>11600032</td>
                         <td>1512600017</td>
+                        <td>115</td>
                         <td>Interaksi Manusia dan Komputer B</td>
                         <td>
                             UAS 
@@ -203,12 +270,21 @@ export default class Tabel extends Component {
                         <td>
                             Selesai
                         </td>
+                        <td>
+                        <button type="button" className="btn btn-success btn-sm" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
 
                         <tr>
                         <td>9</td>
                         <td>11600033</td>
                         <td>1512600018</td>
+                        <td>115</td>
                         <td>Interaksi Manusia dan Komputer C</td>
                         <td>
                             UAS 
@@ -222,6 +298,14 @@ export default class Tabel extends Component {
                         <td>
                             Sedang Berlangsung
                         </td>
+                        <td>
+                            <button type="button" className="btn btn-success btn-sm disabled" data-toggle="modal" data-target="#modal-hasil">
+                                    Lihat Hasil
+                            </button>
+                        </td>
+                        <td>
+                            <button>Export to xls</button>
+                        </td>
                         </tr>
                     </tbody>
                     </table>
@@ -231,6 +315,74 @@ export default class Tabel extends Component {
             </div>
         </div>
         </section>
+
+        <div className="modal fade" id="modal-hasil">
+            <div className="modal-dialog modal-xl">
+            <div className="modal-content">
+                <div className="modal-header">
+                <h4 className="modal-title">Daftar Nilai Mahasiswa</h4>
+                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+                </div>
+                <div className="modal-body">
+                <table className="dataTable table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>NIM</th>
+                            <th>Nama Mahasiswa</th>
+                            <th>Nilai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>
+                            15126170
+                        </td>
+                        <td>
+                            M. Hadiyatullah
+                        </td>
+                        <td>
+                            85
+                        </td>
+                        </tr> 
+
+                        <tr>
+                        <td>
+                            15126171
+                        </td>
+                        <td>
+                            Nugraha
+                        </td>
+                        <td>
+                            85
+                        </td>
+                        </tr> 
+
+                        <tr>
+                        <td>
+                            15126172
+                        </td>
+                        <td>
+                            Nisrina Friyal
+                        </td>
+                        <td>
+                            85
+                        </td>
+                        </tr>                                              
+                    </tbody>
+                    </table>
+                </div>
+                {/* <div className="modal-footer justify-content-between">
+                <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" className="btn btn-primary">Save changes</button>
+                </div> */}
+            </div>
+            {/* /.modal-content */}
+            </div>
+            {/* /.modal-dialog */}
+        </div>
+        {/* /.modal */}
 
   </div>
   {/* /.content-wrapper */}</div>

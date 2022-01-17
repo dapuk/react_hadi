@@ -23,7 +23,7 @@ export default class Ujian extends Component {
                         <div className="col-12">
                         <div className="card">
                             <div className="card-header">
-                            <h3 className="card-title">Data Soal Ujian</h3>
+                            <h3 className="card-title">Data Hasil Ujian</h3>
                             </div>
                             {/* /.card-header */}
                             <div className="card-body">
@@ -40,6 +40,7 @@ export default class Ujian extends Component {
                                 </tr>
                                 </thead>
                                 <tbody>
+
                                 <tr>
                                     <td>1</td>
                                     <td>Pemrograman Web</td>
@@ -49,12 +50,12 @@ export default class Ujian extends Component {
                                     <td>
                                     01, August 2021 - 01:46:46                    </td>
                                     <td>
-                                    <NavLink exact to="/mahasiswa/prosesujian" className="btn btn-xs btn-primary">
-                                        <i className="nav-icon fas fa-play" style={MarginFontAwe} /> Mulai
+                                    <NavLink exact to="/mahasiswa/prosesujian" className="btn btn-xs btn-danger disabled">
+                                        <i className="nav-icon fas fa-lock" style={MarginFontAwe} /> Selesai
                                     </NavLink>
                                     </td>
                                     <td>
-                                    Skor nilai
+                                    80
                                     </td>
                                 </tr>
                                 </tbody>

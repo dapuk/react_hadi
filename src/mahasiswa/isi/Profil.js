@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import qs from 'query-string'
-import user from '../../user.png'
+import user from '../../HADI_NEW.jpg'
 
 let posisikanan = {
     float:'right'

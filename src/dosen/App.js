@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Menu from './Menu';
 import Dasbor from './isi/Dasbor';
 import Profil from './isi/Profil';
+import Mahasiswa from './isi/Mahasiswa';
 // Ujian
 import TabelUjian from './isi/ujian/Tabel';
 import HasilUjian from './isi/ujian/Hasil';
@@ -18,9 +19,11 @@ import TabelSoal from './isi/bank/TabelSoal';
 import TambahBank from './isi/bank/Tambah';
 import UbahBank from './isi/bank/Ubah';
 import Footer from './Footer';
+import { useHistory } from 'react-router-dom';
 import { HashRouter as Router, Switch, Route} from 'react-router-dom';
 
 function App() {
+  let history = useHistory();
   return (
     <Router>
       <div className="wrapper">
@@ -32,6 +35,7 @@ function App() {
               </Route>
 
               <Route path="/dosen/profil/" component={Profil} />
+              <Route path="/dosen/mahasiswa/" component={Mahasiswa} />
               
               <Route path="/dosen/hasilujian/">
                 <HasilUjian/>
@@ -45,9 +49,7 @@ function App() {
                 <UbahUjian/>
               </Route>
 
-              <Route path="/dosen/tambahujian">
-                <TambahUjian/>
-              </Route>
+              <Route path="/dosen/tambahujian" component={TambahUjian} />
 
               <Route path="/dosen/paket/" component={TabelPaket} />
 

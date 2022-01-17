@@ -3,6 +3,7 @@ import Nav from './Nav';
 import Menu from './Menu';
 import Dasbor from './isi/Dasbor';
 import Ujian from './isi/Ujian';
+import HasilUjian from './isi/HasilUjian';
 // Proses Ujian 
 import ProsesUjian from './isi/ProsesUjian';
 import ProsesUjian_2 from './isi/ProsesUjian_2';
@@ -31,6 +32,7 @@ function App() {
           </Route>
 
           <Route path="/mahasiswa/ujian" component={Ujian} />
+          <Route path="/mahasiswa/hasilujian" component={HasilUjian} />
 
           <Route path="/mahasiswa/profil" component={Profil} />
 

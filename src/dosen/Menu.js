@@ -2,7 +2,7 @@ import { Pointer } from 'highcharts';
 import React, { Component } from 'react'
 import {NavLink} from 'react-router-dom'
 import { useHistory } from 'react-router-dom'
-import user from '../user.png'
+import user from '../DOSEN_NEW.jpg'
 
 function Menu() {
   let history = useHistory();
@@ -54,6 +54,13 @@ function Menu() {
                     <p> Dashboard</p>
                 </NavLink>
               </li>
+              <li className="nav-item">
+              <NavLink to="/dosen/mahasiswa/" activeClassName="nav-link active" className="nav-link">
+                    <i className="nav-icon fas fa-users" style={MarginFontAwe} /> 
+                    <p> Mahasiswa</p>
+                </NavLink>
+              </li>
+
               <li className="nav-item">
               <NavLink to="/dosen/profil/" activeClassName="nav-link active" className="nav-link">
                     <i className="nav-icon fas fa-user" style={MarginFontAwe} /> 

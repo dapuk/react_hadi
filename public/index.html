@@ -99,7 +99,10 @@
 <script>
 $(function () {
   // Summernote
-  $('#summernote').summernote()
+  $('#summernote').summernote({
+    tabsize: 10,
+    height: 300,
+  })
   $('#range-date-full').daterangepicker(
       {
         ranges   : {
