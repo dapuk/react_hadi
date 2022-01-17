@@ -20,8 +20,6 @@ const locales = {
   "id-ID": require("date-fns/locale/en-US")
 }
 
-const year = "2022"
-
 const localizer = dateFnsLocalizer({
   format,
   parse,
@@ -446,12 +444,7 @@ export default class Dasbor extends Component {
                        height: 700,
                        margin: "50px" 
                       }}
-                      date={new Date(moment(year).format("Y"))}
-                      onNavigate={(year) => {
-                          this.setState({
-                            year,
-                          });
-                      }}
+                      defaultDate={new Date(moment().format("Y"))}
                     />
                   </div>
                 </div>
