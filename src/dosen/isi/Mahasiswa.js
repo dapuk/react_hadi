@@ -80,9 +80,9 @@ class Tabel extends Component {
                 <div className="card-header">
                     <h3 className="card-title">Data Mahasiswa</h3>
                     <div className="card-tools">
-                        <Link to="/dosen/tambahpaket/" className="btn btn-sm btn-primary">
+                        {/* <Link to="/dosen/tambahpaket/" className="btn btn-sm btn-primary">
                             <i className="fas fa-plus" /> Tambah Data Mahasiswa
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
                 {/* /.card-header */}

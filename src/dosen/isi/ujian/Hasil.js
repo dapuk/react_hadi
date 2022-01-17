@@ -55,7 +55,7 @@ export default class Tabel extends Component {
                         <td>115</td>
                         <td>Algoritma dan Pemrograman A</td>
                         <td>UAS</td>
-                        <td>11600011</td>
+                        <td>11600011, 11600012, 11600013</td>
                         <td>
                           Selesai
                         </td>
@@ -67,7 +67,7 @@ export default class Tabel extends Component {
                         <td>115</td>
                         <td>Algoritma dan Pemrograman B</td>
                         <td>UAS</td>
-                        <td>11600012</td>
+                        <td>11600011, 11600012, 11600013</td>
                         <td>
                           Belum Selesai
                         </td>
@@ -79,7 +79,7 @@ export default class Tabel extends Component {
                         <td>115</td>
                         <td>Algoritma dan Pemrograman C</td>
                         <td>UAS</td>
-                        <td>11600013</td>
+                        <td>11600011, 11600012, 11600013</td>
                         <td>
                           Selesai
                         </td>

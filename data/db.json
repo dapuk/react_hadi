@@ -15,21 +15,21 @@
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman A",
-      "no_paket_ujian": "11600011, 11600012, 11600013"
+      "no_paket_ujian": "11600011"
     },
     {
       "id": 2,
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman B",
-      "no_paket_ujian": "11600011, 11600012, 11600013"
+      "no_paket_ujian": "11600012"
     },
     {
       "id": 3,
       "jenis_ujian": "UAS",
       "jumlah_soal": "20",
       "matkul": "Algoritma dan Pemrograman C",
-      "no_paket_ujian": "11600011, 11600012, 11600013"
+      "no_paket_ujian": "11600013"
     },
     {
       "id": 4,
