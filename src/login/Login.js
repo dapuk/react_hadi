@@ -29,7 +29,7 @@ function Login() {
         <img src={logo} className="img-circle" style={{height: 230, width: 230, marginBottom: '10px'}} /><br />
         <h4>Aplikasi Ujian Pilihan Ganda</h4>
         <h4>Pendidikan Teknik Informatika dan Komputer</h4>
-        <a href="#"><b>(E-TEST)</b></a>
+        <a href="#"><b>(SIUJARING)</b></a>
         </div>
         <div className="card">
         <div className="card-body login-card-body">

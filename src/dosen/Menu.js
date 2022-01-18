@@ -28,7 +28,7 @@ function Menu() {
     <a href="index3.html" className="brand-link">
       {/* <img src="dist/img/AdminLTELogo.png" alt="AdminLTE Logo" className="brand-image img-circle elevation-3" style={{opacity: '.8'}} /> */}
       <center>
-      <span className="brand-text font-weight-light">E - TEST</span>
+      <span className="brand-text font-weight-light">SIUJARING</span>
       </center>
     </a>
     {/* Sidebar */}
@@ -68,12 +68,12 @@ function Menu() {
                 </NavLink>
               </li>
 
-              <li className="nav-item">
+              {/* <li className="nav-item">
               <NavLink to="/dosen/hasilujian/" activeClassName="nav-link active" className="nav-link">
                     <i className="nav-icon fas fa-book" style={MarginFontAwe} /> 
                     <p> Hasil Ujian</p>
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item">
               <NavLink to="/dosen/ujian/" activeClassName="nav-link active" className="nav-link">
