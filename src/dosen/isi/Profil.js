@@ -298,10 +298,10 @@ class Profil extends Component {
                                 <b>NIP</b> <a className="float-right">{this.state.data_nip}</a>
                             </li>
                             <li className="list-group-item">
-                                <b>NIDN</b> <a className="float-right">{this.state.data_nip}</a>
+                                <b>NIDN</b> <a className="float-right">{this.state.data_nidn}</a>
                             </li>
                             <li className="list-group-item">
-                                <b>NIDK</b> <a className="float-right">{this.state.data_nip}</a>
+                                <b>NIDK</b> <a className="float-right">{this.state.data_nidk}</a>
                             </li>
                             <li className="list-group-item">
                                 <b>Email</b> <a className="float-right">{this.state.data_email}</a>

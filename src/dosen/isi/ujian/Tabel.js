@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
+import ExampleDoc from '../../../HasilUjian.xlsx'
 
 export default class Tabel extends Component {
     render() {
@@ -80,7 +81,10 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            {/* <a href={require("../../../HasilUjian.xlsx")} download="HasilUjian.xlsx">Export to xlsx</a> */}
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -108,7 +112,9 @@ export default class Tabel extends Component {
                                 </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -136,7 +142,9 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -164,7 +172,9 @@ export default class Tabel extends Component {
                                 </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -192,7 +202,9 @@ export default class Tabel extends Component {
                                 </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -220,7 +232,9 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -248,7 +262,9 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                            <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -276,7 +292,9 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                        <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
 
@@ -304,7 +322,9 @@ export default class Tabel extends Component {
                             </button>
                         </td>
                         <td>
-                            <button>Export to xls</button>
+                        <a href={ExampleDoc} download="HasilUjian" target='_blank'>
+                                <button className='btn btn-info btn-sm'>Export to Excel</button>
+                            </a>
                         </td>
                         </tr>
                     </tbody>
