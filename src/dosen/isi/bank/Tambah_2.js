@@ -195,7 +195,6 @@ nextClick = (e) => {
                                 {/* Soal No <input type="text" width="3px" value={this.state.soal} /> */}
                                 
                                 <CKEditor
-                                    style={{marginBottom: "5px"}}
                                     editor={ ClassicEditor }
                                     // data="<p>Hello from CKEditor 5!</p>"
                                     onReady={ editor => {
@@ -213,8 +212,8 @@ nextClick = (e) => {
                                         console.log( 'Focus.', editor );
                                     } }
                                 />
+
                                 <br />
-                                {/* <textarea id="summernote" defaultValue={""} /> */}
                                 <input type="file"></input>
                             </div>
 
@@ -237,7 +236,8 @@ nextClick = (e) => {
                             </div>                          
                         </div>
                         <div className="card-footer">
-                            <button type="submit" className="btn btn-success btn-sm" style={MarginR} onClick={() => this.props.history.push('/dosen/tambahbank_2')}>Selanjutnya</button>
+                            <button type="submit" className="btn btn-danger btn-sm" style={MarginR} onClick={() => this.props.history.goBack()}>Sebelumnya</button>
+                            <button type="submit" className="btn btn-success btn-sm" style={MarginR} onClick={() => this.props.history.push('/dosen/tambahbank_3')}>Selanjutnya</button>
                         </div>
                     </div>
                 </div>

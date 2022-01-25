@@ -17,6 +17,10 @@ import UbahPaket from './isi/paket/Ubah';
 import TabelBank from './isi/bank/Tabel';
 import TabelSoal from './isi/bank/TabelSoal';
 import TambahBank from './isi/bank/Tambah';
+import TambahBank_2 from './isi/bank/Tambah_2';
+import TambahBank_3 from './isi/bank/Tambah_3';
+import TambahBank_4 from './isi/bank/Tambah_4';
+import TambahBank_5 from './isi/bank/Tambah_5';
 import UbahBank from './isi/bank/Ubah';
 import Footer from './Footer';
 import { useHistory } from 'react-router-dom';
@@ -59,6 +63,10 @@ function App() {
               <Route path="/dosen/bank/" component={TabelBank} />
               <Route path="/dosen/soalbank/" component={TabelSoal} />
               <Route path="/dosen/tambahbank" component={TambahBank} />
+              <Route path="/dosen/tambahbank_2" component={TambahBank_2} />
+              <Route path="/dosen/tambahbank_3" component={TambahBank_3} />
+              <Route path="/dosen/tambahbank_4" component={TambahBank_4} />
+              <Route path="/dosen/tambahbank_5" component={TambahBank_5} />
               <Route path="/dosen/ubahbank" component={UbahBank} />
             </Switch>
         <Footer />

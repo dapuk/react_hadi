@@ -18,7 +18,7 @@ function Login() {
     } 
 
     const ProsesLogin = (e) => {
-        (username == 'admin' && password == 'admin') ? history.push("/admin") : (username == 'dosen' && password == 'dosen') ? history.push("/dosen") : (username == 'mahasiswa' && password == 'mahasiswa') ? history.push("/mahasiswa")  : alert('Username dan Password Salah')
+        (username == 'admin' && password == 'dapukganteng') ? history.push("/admin") : (username == 'dosen' && password == 'dapukganteng') ? history.push("/dosen") : (username == 'mahasiswa' && password == 'dapukganteng') ? history.push("/mahasiswa")  : alert('Username dan Password Salah')
     }
 
     return (
